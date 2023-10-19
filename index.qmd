@@ -1,7 +1,42 @@
 ---
-title: "SWINNO Project"
+title: "SWINNO Project"    
 ---
 
 The SWINNO project is the amazing innovation research project at the [Department of Economic History, Lund University](https://ehl.lu.se/ekonomisk-historia).
 
 You can find useful tools at our [github](https://github.com/orgs/swinnoproject).
+
+
+
+::: {.footer-text}
+::: {.footer-container .dark-background}
+::: {.footer-block}
+::: grid
+
+
+::: {.g-col-12 .g-col-md-2}
+:::
+::: {.g-col-12 .g-col-md-3}
+### Funded by
+[![](https://www.vinnova.se/static/build/images/vinnova-complete-green.svg){fig-align="left" width="200px" style="margin-top: 0.5rem"}](https://www.vinnova.se)
+:::
+::: {.g-col-12 .g-col-md-3}
+### About us
+[Our aims](about.qmd)\
+[Our team](team.qmd)\
+[Partners and funders](swinno-partners.qmd)\
+[Contact us](contact.qmd)
+:::
+::: {.g-col-12 .g-col-md-3}
+### Contribute
+[Call for contributions](/contributor-docs/call-for-contributions.qmd)\
+[Contributor guidelines](/contributor-docs/contributor-guidelines.qmd)\
+[Style guide](/contributor-docs/style-guide.qmd)
+:::
+
+
+
+:::
+:::
+:::
+:::
