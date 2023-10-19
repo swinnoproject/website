@@ -1,7 +1,7 @@
 ---
-title: "Swinnoproject"
+title: "SWINNO Project"
 ---
 
-This is a Quarto website.
+The SWINNO project is the amazing innovation research project at the [Department of Economic History, Lund University](https://ehl.lu.se/ekonomisk-historia).
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+You can find useful tools at our [github](https://github.com/orgs/swinnoproject).
