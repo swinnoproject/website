@@ -1,15 +1,36 @@
 ---
 title: "SWINNO Project Members"
+toc: false
+listing:
+    - id: current
+      contents: 
+        - "team/current/*.qmd"
+        - path: https://pjkreutzer.github.io
+          title: Philipp Jonas Kreutzer
+          image: "assets/images/PhilippJonasKreutzer.jpg"
+          subtitle: "PhD Student"
+          description: "🡽"
+      type: grid
+      image-height: 225px
+      grid-columns: 3
+      fields: [image, title, subtitle]
+      grid-item-align: center
+      sort: sortby
+      field-display-names:
+        started: "Started"
 ---
 
-# Current
 
-- Josef Taalbi
-- Astrid Kander
-- Philipp Jonas Kreutzer
-- Johanna Fink
-...
+## Current
+
+:::{#current}
+:::
 
 ## Affiliated
+:::{#affiliated}
+:::
 
-# Past
+## Alumni
+
+:::{#alumni}
+:::

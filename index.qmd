@@ -9,7 +9,7 @@ You can find useful tools at our [github](https://github.com/orgs/swinnoproject)
 
 
 ::: {.footer-text}
-::: {.footer-container .dark-background}
+::: {.footer-container}
 ::: {.footer-block}
 ::: grid
 

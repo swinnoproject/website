@@ -1,0 +1,11 @@
+---
+title: "Contact us"
+sidebar: false
+page-layout: article
+toc: false
+---
+
+## Team
+
+**Email:** [josef.taalbi @ekh.lu.se](mailto:josef.taalbi@ekh.lu.se)
+**Github:** [@swinnoproject](https://github.com/swinnoproject)
