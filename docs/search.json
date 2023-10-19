@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SWINNO Project",
+    "section": "",
+    "text": "The SWINNO project is the amazing innovation research project at the Department of Economic History, Lund University.\nYou can find useful tools at our github."
+  },
+  {
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "SWINNO Project Members",
+    "section": "",
+    "text": "Josef Taalbi\nAstrid Kander\nPhilipp Jonas Kreutzer\nJohanna Fink …"
+  }
+]
