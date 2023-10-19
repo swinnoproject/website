@@ -1,0 +1,16 @@
+/*-- scss:defaults --*/
+
+$nordic-purple: #bac1f5;
+$nordic-green-800: #d0f1d6;
+$nordic-green-600: #73b4a0;
+$nordic-green-400: #356569;
+$nordic-green-200: #25434b;
+$nordic-green-100: #161324;
+
+$primary : $nordic-green-400;
+
+/*-- scss:rules --*/
+
+.dark-background {
+    background-color: $nordic-green-100;
+}
