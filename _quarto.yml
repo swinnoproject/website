@@ -3,18 +3,32 @@ project:
   output-dir: docs
 
 website:
-  title: "Swinnoproject"
+  title: "SWINNO"
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - team.qmd
+      - href: about.qmd
+        text: About
+      - href: team.qmd
+        text: Team
+      - href: publications.qmd
+        text: Publications
+  page-footer: 
+    background: "#161324"
+    left: |
+      Copyright &copy;  2023 [SWINNO Project]()
+    center:
+        - href: https://github.com/swinnoproject
+          icon: github
+          aria-label: GitHub
+    right: |
+      [Terms and Conditions](/tscs.qmd)  
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: [materia, colors.scss, noto.scss]
+    # css: inter.scss
     toc: true
 
 
