@@ -11,6 +11,59 @@ $primary : $nordic-green-400;
 
 /*-- scss:rules --*/
 
-.dark-background {
+
+.black-background {
+    background-color: black;
+}
+
+.purple-background {
+    background-color: $nordic-purple;
+}
+
+.nordic-green-800-background {
+    background-color: $nordic-green-800;
+}
+
+.nordic-green-600-background {
+    background-color: $nordic-green-600;
+}
+
+.nordic-green-400-background {
+    background-color: $nordic-green-400;
+}
+
+.nordic-green-200-background {
+    background-color: $nordic-green-200;
+}
+
+.nordic-green-100-background {
     background-color: $nordic-green-100;
+}
+
+.white-text {
+    color: white;
+}
+
+.purple-text {
+    color: $nordic-purple;
+}
+
+.nordic-green-800-text {
+    color: $nordic-green-800;
+}
+
+.nordic-green-600-text {
+    color: $nordic-green-600;
+}
+
+.nordic-green-400-text {
+    color: $nordic-green-400;
+}
+
+.nordic-green-200-text {
+    color: $nordic-green-200;
+}
+
+.nordic-green-100-text {
+    color: $nordic-green-100;
 }
