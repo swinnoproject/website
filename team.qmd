@@ -1,17 +1,13 @@
 ---
-title: "SWINNO Project Members"
+pagetitle: "Team | SWINNO"
+title: "Project Members"
 toc: false
 listing:
     - id: current
       contents: 
         - "team/current/*.qmd"
-        - path: https://pjkreutzer.github.io
-          title: Philipp Jonas Kreutzer
-          image: "assets/images/PhilippJonasKreutzer.jpg"
-          subtitle: "PhD Student"
-          description: "🡽"
       type: grid
-      image-height: 225px
+      image-height: 250px
       grid-columns: 3
       fields: [image, title, subtitle]
       grid-item-align: center
