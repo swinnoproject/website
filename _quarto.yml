@@ -27,9 +27,14 @@ website:
 
 format:
   html:
-    theme: [materia, colors.scss, noto.scss]
-    # css: inter.scss
+    theme: [materia, colors.scss, inter.scss]
+    css: styles.css
     toc: true
+    grid:
+      sidebar-width: 0px
+      body-width: 1000px
+      margin-width: 250px
+
 
 
 
