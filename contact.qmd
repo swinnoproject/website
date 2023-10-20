@@ -1,4 +1,5 @@
 ---
+pagetitle: "Contact | SWINNO"
 title: "Contact us"
 sidebar: false
 page-layout: article

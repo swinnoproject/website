@@ -1,4 +1,5 @@
 ---
+pagetitle: "SWINNO"
 title: "SWINNO Project"    
 ---
 
