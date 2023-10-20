@@ -7,5 +7,9 @@ toc: false
 
 ## Team
 
-**Email:** [josef.taalbi @ekh.lu.se](mailto:josef.taalbi@ekh.lu.se)
+
+[Send us an Email](mailto:josef.taalbi@ekh.lu.se)
+
+
+### Find us on 
 **Github:** [@swinnoproject](https://github.com/swinnoproject)
