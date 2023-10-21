@@ -1,15 +1,12 @@
 ---
 pagetitle: "SWINNO"
-title: "SWINNO Project"    
 ---
 
-The SWINNO project is the amazing innovation research project at the [Department of Economic History, Lund University](https://ehl.lu.se/ekonomisk-historia).
-
-You can find useful tools at our [github](https://github.com/orgs/swinnoproject).
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis eget velit aliquet sagittis id consectetur purus. Accumsan tortor posuere ac ut. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Quis risus sed vulputate odio ut enim blandit volutpat. Mauris pharetra et ultrices neque ornare. Dictum at tempor commodo ullamcorper. Molestie at elementum eu facilisis sed. Dictum varius duis at consectetur lorem. Id semper risus in hendrerit gravida. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Placerat vestibulum lectus mauris ultrices eros in cursus. Enim tortor at auctor urna nunc. In eu mi bibendum neque egestas congue quisque. Tellus in metus vulputate eu scelerisque felis imperdiet. Fringilla urna porttitor rhoncus dolor purus non enim praesent elementum. Morbi leo urna molestie at elementum eu. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Sed arcu non odio euismod. Pharetra vel turpis nunc eget.
-
-Sed egestas egestas fringilla phasellus. Rutrum quisque non tellus orci ac auctor augue mauris. Eu nisl nunc mi ipsum faucibus vitae. Eget dolor morbi non arcu risus. Sagittis vitae et leo duis ut diam quam nulla. Malesuada fames ac turpis egestas. Enim sed faucibus turpis in eu mi bibendum neque. Urna condimentum mattis pellentesque id nibh. Est ante in nibh mauris. Adipiscing at in tellus integer feugiat scelerisque varius. Neque vitae tempus quam pellentesque nec nam. Consectetur purus ut faucibus pulvinar elementum integer enim. Tincidunt id aliquet risus feugiat. Enim ut tellus elementum sagittis vitae et leo duis. Augue mauris augue neque gravida in fermentum et. Risus in hendrerit gravida rutrum quisque non tellus orci ac. Vel pretium lectus quam id leo in.
+:::{.text-bigger}
+The SWINNO project does research at the forefront of innovation and innovation systems.
+We developed and maintain a unique database of Swedish innovation from 1909 to today.
+Currently we focus on the impact of innovations and social, environmental and economic sustainability. 
+:::
 
 
 ::: {.footer-text}
@@ -18,11 +15,14 @@ Sed egestas egestas fringilla phasellus. Rutrum quisque non tellus orci ac aucto
 ::: grid
 
 
-::: {.g-col-12 .g-col-md-2}
-:::
 ::: {.g-col-12 .g-col-md-3}
 ### Funded by
-[![](https://www.vinnova.se/static/build/images/vinnova-complete-green.svg){fig-align="left" width="200px" style="margin-top: 0.5rem"}](https://www.vinnova.se)
+[![](https://www.vinnova.se/static/build/images/vinnova-complete-green.svg){fig-align="left" width="200px" style="margin-top: 0.5rem" fig-alt="Logo of VINNOVA"}](https://www.vinnova.se)
+[![](https://www.lusem.lu.se/static/toolkit/images/logo/logo_lusem@2x.png){fig-align="left" width="200px" style="margin-top: 0.5rem" fig-alt="Logo of Lund University School of Economics and Management"}](https://www.lusem.lu.se)
+:::
+::: {.g-col-12 .g-col-md-3}
+### Located at
+[![](https://www.lusem.lu.se/static/toolkit/images/logo/logo_lusem@2x.png){fig-align="left" width="200px" style="margin-top: 0.5rem" fig-alt="Logo of Lund University School of Economics and Management"}](https://www.lusem.lu.se)
 :::
 ::: {.g-col-12 .g-col-md-3}
 ### About us
@@ -33,9 +33,7 @@ Sed egestas egestas fringilla phasellus. Rutrum quisque non tellus orci ac aucto
 :::
 ::: {.g-col-12 .g-col-md-3}
 ### Contribute
-[Call for contributions](/contributor-docs/call-for-contributions.qmd)\
-[Contributor guidelines](/contributor-docs/contributor-guidelines.qmd)\
-[Style guide](/contributor-docs/style-guide.qmd)
+[Call for contributions](call-for-contributions.qmd)\
 :::
 
 
