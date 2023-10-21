@@ -6,11 +6,18 @@ page-layout: article
 toc: false
 ---
 
-## Team
+::: grid
+:::{.g-col-12 .g-col-md-3}
+:::
+:::{.g-col-12 .g-col-md-4}
+### Team
 
+[Send us an Email {{< bi envelope >}}](mailto:josef.taalbi@ekh.lu.se)
+:::
 
-[Send us an Email](mailto:josef.taalbi@ekh.lu.se)
-
-
+:::{.g-col-12 .g-col-md-4}
 ### Find us on 
 **Github:** [@swinnoproject](https://github.com/swinnoproject)
+:::
+
+:::
