@@ -14,6 +14,29 @@ listing:
       sort: sortby
       field-display-names:
         started: "Started"
+    
+    - id: affiliated
+      contents: 
+        - "team/affiliated/*.qmd"
+      type: grid
+      image-height: 250px
+      grid-columns: 3
+      fields: [image, title, subtitle]
+      grid-item-align: center
+      sort: sortby
+      field-display-names:
+        started: "Started"
+
+    - id: alumni
+      contents: "team/alumni/*.qmd"
+      type: table
+      sort: sortby
+      fields: [title, subtitle, started, ended]
+      field-display-names: 
+        title: "Name"
+        subtitle: "Role"
+        started: "Started"
+        ended: "Ended"
 ---
 
 

@@ -1,0 +1,12 @@
+---
+title: "Mathias Johansson"
+subtitle: Research Engineer
+image: ../../assets/images/outline.png
+about:
+    template: broadside
+    # links: 
+    #     - text: "{{< ai orcid >}}"
+    #       href: https://orcid.org/0000-0002-3338-0551
+ 
+toc: false
+---

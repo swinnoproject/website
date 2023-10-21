@@ -1,0 +1,20 @@
+---
+title: "Astrid Kander"
+# subtitle: 
+image: ../../assets/images/outline.png
+sortby: 2
+about:
+    template: broadside
+    image: ../../assets/images/outline.png
+    links: 
+      - icon: person-fill
+        href: https://portal.research.lu.se/en/persons/astrid-kander
+      - icon: mortarboard
+        href: https://scholar.google.com/citations?user=msXWtQgAAAAJ
+            
+toc: false
+---
+
+My main research is in the field of environmental economic history. It is about the interrelations of economic growth, innovations, energy and CO2 emissions. The geographical scope is Sweden, Europe and the entire Globe and the time period is from 1800 up until the present. Trade and embodied emissions have been part of my research output in recent years. I also have a project on carbon border adjustment mechanism in EU.
+
+A second strand of research is innovation, more broadly. We have established a consistent Literature Based innovation output database for Sweden and Finland 1970-2013. It will be used to assess policy impacts, collaboration, economic significance of innovations and the interrelations between research and development (R&D), growth and innovation

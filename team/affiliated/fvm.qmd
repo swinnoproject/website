@@ -1,0 +1,23 @@
+---
+title: "Frank van der Most"
+subtitle: Consulting Research Engineer
+image: ../../assets/images/outline.png
+about:
+    template: broadside
+    image: ../../assets/images/outline.png
+
+    links: 
+          - icon: person-fill
+            href: https://frankvandermost.com/about/
+    #       - icon: twitter
+    #         href: https://twitter.com/pjkreutzer
+    #       - icon: github
+    #         href: https://github.com/pjkreutzer
+    #       - text: "{{< bi envelope-fill >}}"
+    #         href: mailto:philipp_jonas.kreutzer@ekh.lu.se
+
+# page-layout: full
+toc: false
+---
+
+I make databases for sustainability research. Currently, I am doing that at the Economic History Department at Lund University in Sweden, where I have been developing a database for historical data on Swedish innovations. During a 2020 sabbatical in Costa Rica with my partner, we volunteered for Osa Conservation. I have developed a table-stitching database to glue together the different datasheets that they created over time with their sea turtle nesting program. This work made me realize that I want to orient my database developing more towards nature conservation and biological research. To do so, I am starting a company called Rubber Boots Data. 

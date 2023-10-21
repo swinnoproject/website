@@ -1,0 +1,17 @@
+---
+title: "Josef Taalbi"
+subtitle: PI
+image: ../../assets/images/outline.png
+sortby: 1
+about:
+    template: broadside
+    links: 
+        - icon: person-fill
+          href: https://joseftaalbi.com/
+        - icon: mortarboard
+          href: https://scholar.google.com.tw/citations?user=dBO5CxsAAAAJ&hl=sv&oi=ao
+         
+toc: false
+---
+
+My main research interest lies in the study of why, how and when people innovate, and what can be learnt about societal transitions from observing patterns in technological change in a long run perspective, focusing on the period from 1890 to today. Parts of this work has been to construct and further develop a Swedish innovation output database, SWINNO. To study the driving forces of technological and structural change, I combine micro and macro analysis and statistical and qualitative analysis, drawing from economic history, network analysis and innovation studies. Of particular interest is how complementarities and obstacles emerge in technology shifts, shaping long run outcomes.

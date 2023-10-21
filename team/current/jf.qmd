@@ -1,0 +1,14 @@
+---
+title: "Johanna Fink"
+subtitle: PhD Student
+image: ../../assets/images/outline.png
+about:
+    template: broadside
+    links: 
+        - icon: person-fill
+          href: https://portal.research.lu.se/en/persons/johanna-fink
+         
+toc: false
+---
+
+My dissertation project analyzes how government funding and innovation policy affect innovations in Sweden. The main focus is placed on the question whether public innovation activity is line with the country's environmental targets.

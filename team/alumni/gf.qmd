@@ -1,0 +1,22 @@
+---
+title: "Gergei Farkas"
+# subtitle: 
+# image: 
+started: YYYY
+ended: YYYY
+about:
+    template: broadside
+    # image: 
+    # links: 
+    #       - icon: person-fill
+    #         href: https://pjkreutzer.github.io
+    #       - icon: twitter
+    #         href: https://twitter.com/pjkreutzer
+    #       - icon: github
+    #         href: https://github.com/pjkreutzer
+    #       - text: "{{< bi envelope-fill >}}"
+    #         href: mailto:philipp_jonas.kreutzer@ekh.lu.se
+
+# page-layout: full
+toc: false
+---
