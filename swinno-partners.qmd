@@ -1,4 +1,5 @@
 ---
+pagetitle: "Partners | SWINNO"
 title: "Our partners and funders"
 sidebar: false
 page-layout: article
@@ -10,3 +11,8 @@ toc: false
 [![](https://www.vinnova.se/static/build/images/vinnova-complete-green.svg){fig-align="left" width="200px" style="margin-top: 0.5rem"}](https://www.vinnova.se)
 
 Vinnova is Sweden's innovation agency. Our mission is to strengthen Sweden's innovative capacity and contribute to sustainable growth. We work to ensure that Sweden is an innovative force in a sustainable world.
+
+[![](https://www.lusem.lu.se/static/toolkit/images/logo/logo_lusem@2x.png){fig-align="left" width="200px" style="margin-top: 0.5rem" fig-alt="Logo of Lund University School of Economics and Management"}](https://www.lusem.lu.se)
+
+LUSEM is one of the worlds leading economics and management schools.
+Located at the Lund University, Sweden.
