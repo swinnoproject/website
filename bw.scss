@@ -1,0 +1,122 @@
+/*-- scss:defaults --*/
+
+$nordic-purple: #bac1f5;
+$nordic-green-800: #d0f1d6;
+$nordic-green-600: #73b4a0;
+$nordic-green-400: #356569;
+$nordic-green-200: #25434b;
+$nordic-green-100: #161324;
+
+$primary : black;
+$fontcolor: black;
+
+/*-- scss:rules --*/
+
+
+.black-background {
+    background-color: black;
+}
+
+body {
+    color: black;
+    font-weight: $font-weight-normal;
+}
+
+/*-- button style --*/
+
+.btn {
+    background-color: white;
+    color: black;
+    // border: 2px solid black;
+    text-decoration: none;
+}
+
+/*-- mobile about link style --*/
+
+div.quarto-about-broadside .about-link {
+    color: black;
+    border-radius: 0px;
+}
+
+/*-- card style --*/
+
+.quarto-grid-item .card-subtitle {
+    font-weight: $font-weight-extra-light;
+}
+
+.card {
+    border: 1.5px solid black;
+
+}
+
+/*-- navbar style --*/
+
+.navbar-title {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.navbar {
+    background-color: white;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.nav-footer {
+    background-color: white;
+    color: black;
+}
+
+.menu-text {
+    color: black;
+}
+
+/*-- footer style --*/
+
+.background-dark {
+    background-color: black;
+}
+
+.footer-container {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 1em;
+    margin-top: 2.5em;
+}
+
+.footer-text h3,
+.h3 {
+    font-size: .875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    margin-top: 0.3rem;
+    border-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0px;
+}
+
+.footer-text p,
+.p {
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+.footer-text p>a {
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+.footer-text p>a:hover {
+    color: black;
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+.footer-block {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 1.8em;
+    box-sizing: border-box;
+}
