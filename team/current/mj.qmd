@@ -1,12 +1,23 @@
 ---
 title: "Mathias Johansson"
-subtitle: Research Engineer
-image: ../../assets/images/outline.png
+subtitle: Systems developer
+image: ../../assets/images/MathiasJohansson.png
 about:
     template: broadside
-    # links: 
-    #     - text: "{{< ai orcid >}}"
-    #       href: https://orcid.org/0000-0002-3338-0551
- 
+    links:
+        - text: "{{< ai orcid >}}"
+          href: https://orcid.org/0000-0002-3338-0551
+        - icon: github
+          href: https://github.com/MatJohaDH
+        - text: "{{< bi envelope-fill >}}"
+          href: mailto:Mathias.Johansson@kultur.lu.se
+
 toc: false
 ---
+
+:::{.text-bigger}
+I create systems, datapipelines and visualisations to help researchers
+leverage everything from simple webscraping and databases to so called
+*Artificial Intelligence* models. In the SWINNO project I am responsible
+for developing a new export format and a public dashboard.
+:::

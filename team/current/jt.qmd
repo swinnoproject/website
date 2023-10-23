@@ -5,7 +5,7 @@ image: ../../assets/images/outline.png
 sortby: 1
 about:
     template: broadside
-    links: 
+    links:
         - icon: person-fill
           href: https://joseftaalbi.com/
         - icon: mortarboard-fill

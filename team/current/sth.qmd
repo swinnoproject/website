@@ -4,7 +4,7 @@ title: "Sara Torregrosa-Hetland"
 image: ../../assets/images/outline.png
 about:
     template: broadside
-    # links: 
+    # links:
     #       - icon: person-fill
     #         href: https://pjkreutzer.github.io
     #       - icon: twitter
