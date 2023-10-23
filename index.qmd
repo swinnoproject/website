@@ -5,7 +5,7 @@ pagetitle: "SWINNO"
 :::{.text-bigger}
 The SWINNO project does research at the forefront of innovation and innovation systems.
 We developed and maintain a unique database of Swedish innovation from 1909 to today.
-Currently we focus on the impact of innovations and social, environmental and economic sustainability. 
+Currently we focus on the impact of innovations as well as social, environmental and economic sustainability. 
 :::
 
 
