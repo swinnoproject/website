@@ -3,7 +3,7 @@ pagetitle: "About | SWINNO"
 title: "About"
 ---
 
-# A database of Swedish innovations, 1970–2019
+# A database of Swedish Innovations, 1970–2019
 
 The SWINNO project is an ongoing series of research projects into Swedish innovations and the Swedish innovation system. Many of these projects are based on the SWINNO database of Swedish innovations, often with additional data from for example surveys, interviews and policy documents. The project is currently headed by Josef Taalbi, and funded by VINNOVA, with additional funding from LUSEM.
 SWINNO 3. Significant New Products and Processes in Sweden 1970 to the present
@@ -14,7 +14,7 @@ Beside the research projects, SWINNO 3 continues and expands the data collection
 
 The richness of the SWINNO data allows it to be linked to for example particular regions, the innovating companies (from Sweden's statistical office) and patents. Patent data is being added to the innovations from 1970 to 2015.
 
-SWINNO data and meta data is publicly available (as far as privacy and copyright allows) as a spreadsheet that can be downloaded [here {{< bi arrow-up-right >}}](https://www.lusem.lu.se/economic-history/databases/swinno){target="_blank"}.
+SWINNO data and meta data is publicly available (as far as privacy and copyright allows) as a spreadsheet that can be downloaded [here](https://www.lusem.lu.se/economic-history/databases/swinno){target="_blank"}.
 
 The SWINNO project has resulted in a number of papers in high impact academic journals, two PhD theses, a number of student papers, working papers and policy documents. 
 
@@ -23,7 +23,7 @@ If you are working with the SWINNO database, please cite the documentation paper
 Sjöö, K., Taalbi, J., Kander, A., & Ljungberg, J. (2014). A Database of Swedish Innovations, 1970-2007. *Lund Papers in Economic History*, 2014:133.
 
 
-[publication details {{< bi arrow-up-right >}}](https://lup.lub.lu.se/search/publication/7868921){target="_blank"} [pdf {{< bi arrow-up-right >}}](https://lucris.lub.lu.se/ws/portalfiles/portal/5522430/7868934){target="_blank"}
+[publication details](https://lup.lub.lu.se/search/publication/7868921){target="_blank"} [pdf](https://lucris.lub.lu.se/ws/portalfiles/portal/5522430/7868934){target="_blank"}
 
 
 ```bibtex

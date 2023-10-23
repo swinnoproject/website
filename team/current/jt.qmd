@@ -8,7 +8,7 @@ about:
     links: 
         - icon: person-fill
           href: https://joseftaalbi.com/
-        - icon: mortarboard
+        - icon: mortarboard-fill
           href: https://scholar.google.com.tw/citations?user=dBO5CxsAAAAJ&hl=sv&oi=ao
          
 toc: false

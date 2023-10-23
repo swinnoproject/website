@@ -9,7 +9,7 @@ about:
     links: 
       - icon: person-fill
         href: https://portal.research.lu.se/en/persons/astrid-kander
-      - icon: mortarboard
+      - icon: mortarboard-fill
         href: https://scholar.google.com/citations?user=msXWtQgAAAAJ
             
 toc: false

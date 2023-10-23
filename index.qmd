@@ -17,7 +17,8 @@ Currently we focus on the impact of innovations and social, environmental and ec
 
 ::: {.g-col-12 .g-col-md-3}
 ### Funded by
-[![](https://www.vinnova.se/static/build/images/vinnova-complete-green.svg){fig-align="left" width="200px" style="margin-top: 0.5rem" fig-alt="Logo of VINNOVA"}](https://www.vinnova.se)
+[![](https://www.vinnova.se/static/build/images/vinnova-complete-green.svg){fig-align="left" width="200px" style="margin-top: 0.5rem" fig-alt="Logo of VINNOVA"}](https://www.vinnova.se) 
+
 [![](https://www.lusem.lu.se/static/toolkit/images/logo/logo_lusem@2x.png){fig-align="left" width="200px" style="margin-top: 0.5rem" fig-alt="Logo of Lund University School of Economics and Management"}](https://www.lusem.lu.se)
 :::
 ::: {.g-col-12 .g-col-md-3}
