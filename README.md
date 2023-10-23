@@ -1,4 +1,4 @@
-![](https://github.com/swinnoproject/website/actions/workflows/publish-quarto.yml/badge.svg)
+![](https://github.com/swinnoproject/website/actions/workflows/publish.yml/badge.svg)
 
 # Repo for SWINNO's website
 
