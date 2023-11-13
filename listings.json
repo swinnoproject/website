@@ -2,15 +2,15 @@
   {
     "listing": "/team.html",
     "items": [
-      "/team/current/jt.html",
-      "/team/current/ak.html",
-      "/team/current/cc.html",
-      "/team/current/jf.html",
-      "/team/current/mj.html",
-      "/team/current/pjk.html",
-      "/team/current/sth.html",
-      "/team/affiliated/fvm.html",
-      "/team/alumni/gf.html"
+      "/team/current/josef_taalbi.html",
+      "/team/current/astrid_kander.html",
+      "/team/current/cristina_chaminade.html",
+      "/team/current/johanna_fink.html",
+      "/team/current/mathias_johansson.html",
+      "/team/current/philipp_jonas_kreutzer.html",
+      "/team/current/sara_torregrose_hetland.html",
+      "/team/affiliated/frank_van_der_most.html",
+      "/team/alumni/gergei_farkas.html"
     ]
   }
 ]
