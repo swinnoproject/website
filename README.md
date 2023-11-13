@@ -26,7 +26,7 @@ To illustrate how to add and change content, this section walks you step by step
     You can enter some content (see next step), cancel the file creation or "save" the new file by clicking on the green button `Commit changes`.
     A new window opens where you can describe what you have changed, or simply commit by clicking on the green button again.
 
-    ![](assets/images/create_file.gif){fig-alt="A GIF showing the steps above"}
+    ![](assets/images/create_file.gif)
 
 2. Make changes to a file:
 
@@ -35,7 +35,7 @@ To illustrate how to add and change content, this section walks you step by step
     Make your changes.
     When you are done making your changes, click on the green `Commit changes` button, add or accept the message to go with the new changes and click on commit again.
 
-    ![](assets/images/edit_file.gif){fig-alt="A GIF showing the steps above"}
+    ![](assets/images/edit_file.gif)
 
 
     To help you get started creating a new personal profile, you can copy paste the template below and modify it.
@@ -80,4 +80,4 @@ To illustrate how to add and change content, this section walks you step by step
     Drag and drop, or search, for the file you want to upload.
     Click on commit as in the previous steps.
 
-    ![](assets/images/upload_file.gif){fig-alt="A GIF showing the steps above"}
+    ![](assets/images/upload_file.gif)
