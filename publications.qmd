@@ -1,15 +1,18 @@
+---
 title: "Peer reviewed publications"
-Martynovich, M., & Taalbi, J. (2023). Dynamic recombinant relatedness and its role for regional innovation. European Planning Studies, 31(5), 1070-1094.
-Taalbi, J. (2022). Creative response in economic history. In Antonelli, C. (ed) Elgar Encyclopedia on the Economics of Knowledge and Innovation (pp. 71-80). Edward Elgar Publishing.
-Taalbi, J. (2022). Technological systems and development blocks.In Antonelli, C. (ed) Elgar Encyclopedia on the Economics of Knowledge and Innovation, (pp. 477-486). Edward Elgar Publishing.
-Taalbi, J. (2021). Innovation in the long run: Perspectives on technological transitions in Sweden 1908–2016. Environmental innovation and societal transitions, 40, 222-248.
-Taalbi, J. (2020). Evolution and structure of technological systems-An innovation output network. Research Policy, 49(8), 104010.
-Kander, A., Taalbi, J., Oksanen, J., Sjöö, K., & Rilla, N. (2019). Innovation trends and industrial renewal in Finland and Sweden 1970–2013. Scandinavian Economic History Review, 67(1), 47-70.
-Taalbi, J. (2019). Origins and pathways of innovation in the third industrial revolution. Industrial and corporate change, 28(5), 1125-1148.
-Torregrosa-Hetland, S., Pelkonen, A., Oksanen, J., & Kander, A. (2019). The prevalence of publicly stimulated innovations–A comparison of Finland and Sweden, 1970–2013. Research Policy, 48(6), 1373-1384.
-Taalbi, J. (2017). What drives innovation? Evidence from economic history. Research Policy, 46(8), 1437-1453.
-Taalbi, J. (2017). Development blocks in innovation networks: The Swedish manufacturing industry, 1970–2007. Journal of Evolutionary Economics, 27(3), 461-501.
-Taalbi, J. (2016). Development blocks and structural analysis (pp. 56-77). New York: Routledge.
+---
+* unordered list
+    + Martynovich, M., & Taalbi, J. (2023). Dynamic recombinant relatedness and its role for regional innovation. European Planning Studies, 31(5), 1070-1094.
+    + Taalbi, J. (2022). Creative response in economic history. In Antonelli, C. (ed) Elgar Encyclopedia on the Economics of Knowledge and Innovation (pp. 71-80). Edward Elgar Publishing.
+    + Taalbi, J. (2022). Technological systems and development blocks.In Antonelli, C. (ed) Elgar Encyclopedia on the Economics of Knowledge and Innovation, (pp. 477-486). Edward Elgar Publishing.
+    + Taalbi, J. (2021). Innovation in the long run: Perspectives on technological transitions in Sweden 1908–2016. Environmental innovation and societal transitions, 40, 222-248.
+    + Taalbi, J. (2020). Evolution and structure of technological systems-An innovation output network. Research Policy, 49(8), 104010.
+    + Kander, A., Taalbi, J., Oksanen, J., Sjöö, K., & Rilla, N. (2019). Innovation trends and industrial renewal in Finland and Sweden 1970–2013. Scandinavian Economic History Review, 67(1), 47-70.
+    + Taalbi, J. (2019). Origins and pathways of innovation in the third industrial revolution. Industrial and corporate change, 28(5), 1125-1148.
+    + Torregrosa-Hetland, S., Pelkonen, A., Oksanen, J., & Kander, A. (2019). The prevalence of publicly stimulated innovations–A comparison of Finland and Sweden, 1970–2013. Research Policy, 48(6), 1373-1384.
+    + Taalbi, J. (2017). What drives innovation? Evidence from economic history. Research Policy, 46(8), 1437-1453.
+    + Taalbi, J. (2017). Development blocks in innovation networks: The Swedish manufacturing industry, 1970–2007. Journal of Evolutionary Economics, 27(3), 461-501.
+    + Taalbi, J. (2016). Development blocks and structural analysis (pp. 56-77). New York: Routledge.
 
 Working papers
 Johansson, M., Nyqvist, J., & Taalbi, J. (2022). Linking innovations and patents-a machine learning assisted method. Available at SSRN 4127194.
