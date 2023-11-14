@@ -1,1 +1,29 @@
 
+ ```
+ ---
+ title: "First Last"
+ subtitle: Role
+ image: ../../assets/images/FirstLast.jpg
+ about:
+     template: broadside
+     links:
+         - icon: person-fill
+             href: link to personal website
+         - icon: mortarboard-fill
+             href: link to google scholar
+          - text: "{{< ai orcid >}}"
+             href: link to your orcid profile
+         - icon: twitter
+             href: link to social media
+         - icon: github
+             href: https://github.com/first_last
+         - text: "{{< bi envelope-fill >}}"
+             href: mailto:first_last@ekh.lu.se
+
+ toc: false
+ ---
+
+ :::{.text-bigger}
+Hi I am a new member!
+:::
+ ```
