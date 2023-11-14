@@ -31,6 +31,8 @@ listing:
       contents: "team/alumni/*.qmd"
       type: table
       sort: sortby
+      sort-ui: false
+      filter-ui: false
       fields: [title, subtitle, started, ended]
       field-display-names: 
         title: "Name"
