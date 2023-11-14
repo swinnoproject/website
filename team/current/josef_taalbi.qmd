@@ -10,6 +10,9 @@ about:
           href: https://joseftaalbi.com/
         - icon: mortarboard-fill
           href: https://scholar.google.com.tw/citations?user=dBO5CxsAAAAJ&hl=sv&oi=ao
+        - text: "Mastodon"
+          href: https://fediscience.org/@joseftaalbi
+
 ---
 
 I am PI of  the SWINNO project. My main research interest lies in the study of why, how and when people innovate, and what can be learnt about societal and sustainable transitions from observing patterns in technological change in a long run perspective, focusing on the period from 1890 to today. 
