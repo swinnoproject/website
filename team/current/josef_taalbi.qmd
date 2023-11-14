@@ -10,7 +10,7 @@ about:
           href: https://joseftaalbi.com/
         - icon: mortarboard-fill
           href: https://scholar.google.com.tw/citations?user=dBO5CxsAAAAJ&hl=sv&oi=ao
-        - icon: mastodon
+        - text: "Mastodon"
           href: https://fediscience.org/@joseftaalbi
           - text: "{{< bi envelope-fill >}}"
             href: mailto:josef.taalbi@ekh.lu.se         
