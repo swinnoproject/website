@@ -70,6 +70,8 @@ Below will introduce you two ways of creating and working with branches.
                     href: link to your orcid profile
                 - icon: twitter
                     href: link to social media
+                - icon: mastodon
+                  href: link to your mastodon
                 - icon: github
                     href: https://github.com/first_last
                 - text: "{{< bi envelope-fill >}}"
