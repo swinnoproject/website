@@ -1,14 +1,14 @@
 ---
 title: "Anders Hylmö"
-# subtitle: Researcher
+subtitle: Researcher
 image: ../../assets/images/andershylmo.jpg
 about:
     template: broadside
-    # links:
-    #       - text: "{{< ai researchgate >}}"- icon: person-fill
-    #         href: https://www.researchgate.net/profile/Anders-Hylmoe
-    #       - icon: researchgate
-    #         href: mailto:anders.hylmo@hh.se
+    links:
+          - text: "{{< ai researchgate >}}"
+            href: https://www.researchgate.net/profile/Anders-Hylmoe
+          - text: "{{< bi envelope-fill >}}"
+            href: mailto:anders.hylmo@hh.se
 
 toc: false
 ---
