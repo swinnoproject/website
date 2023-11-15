@@ -16,3 +16,4 @@ about:
 
 toc: false
 ---
+I work as a research assistant in the SWINNO project. My responsibilities include collecting innovation data and linking patent data to innovations in the SWINNO database. 
