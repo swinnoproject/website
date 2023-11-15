@@ -1,18 +1,14 @@
 ---
 title: "Jakob Nyqvist"
-# subtitle: 
+# subtitle: Research assistant
 image: ../../assets/images/outline.png
 about:
     template: broadside
     # links:
     #       - icon: person-fill
-    #         href: https://pjkreutzer.github.io
-    #       - icon: twitter
-    #         href: https://twitter.com/pjkreutzer
-    #       - icon: github
-    #         href: https://github.com/pjkreutzer
+    #         href: https://www.ehl.lu.se/kontakt/ja0645ny
     #       - text: "{{< bi envelope-fill >}}"
-    #         href: mailto:philipp_jonas.kreutzer@ekh.lu.se
+    #         href: mailto:jakob.nyqvist@ekh.lu.se
 
 toc: false
 ---
