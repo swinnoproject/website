@@ -1,7 +1,7 @@
 ---
 title: "Anders Hylmö"
 subtitle: Researcher
-image: ../../assets/images/andershylmo.jpg
+image: ../../assets/images/AndersHylmo.jpg
 about:
     template: broadside
     links:
