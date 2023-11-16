@@ -1,18 +1,18 @@
 ---
 title: "Anders Hylmö"
-# subtitle: 
-image: ../../assets/images/outline.png
+subtitle: Researcher
+image: ../../assets/images/AndersHylmo.jpg
 about:
     template: broadside
-    # links:
-    #       - icon: person-fill
-    #         href: https://pjkreutzer.github.io
-    #       - icon: twitter
-    #         href: https://twitter.com/pjkreutzer
-    #       - icon: github
-    #         href: https://github.com/pjkreutzer
-    #       - text: "{{< bi envelope-fill >}}"
-    #         href: mailto:philipp_jonas.kreutzer@ekh.lu.se
+    links:
+          - text: "{{< ai researchgate >}}"
+            href: https://www.researchgate.net/profile/Anders-Hylmoe
+          - text: "{{< bi envelope-fill >}}"
+            href: mailto:anders.hylmo@hh.se
 
 toc: false
 ---
+
+:::{.text-bigger}
+I have a backgorund (Phd) as sociologist of science, with current research interests spanning science and technology studies, valuation studies, research and innovation policy and socio-technical transitions to sustainability. In Swinno, I have been responsible for interviewing research managers of large Swedish engineering firms and journal editors and journalists, with the purpose of triangulating methodological insights into the validity of the LBIO method.
+:::
