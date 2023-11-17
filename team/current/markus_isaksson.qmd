@@ -6,13 +6,11 @@ about:
     template: broadside
     # links:
     #       - icon: person-fill
-    #         href: https://pjkreutzer.github.io
-    #       - icon: twitter
-    #         href: https://twitter.com/pjkreutzer
-    #       - icon: github
-    #         href: https://github.com/pjkreutzer
+    #         https://www.ehl.lu.se/kontakt/edz-msi
     #       - text: "{{< bi envelope-fill >}}"
-    #         href: mailto:philipp_jonas.kreutzer@ekh.lu.se
+    #         href: mailto:markus.isaksson@ekh.lu.se
 
 toc: false
 ---
+I joined the SWINNO project in 2021 as a research assistant.
+I work with reading and collecting innovations data to the SWINNO database.
