@@ -1,7 +1,7 @@
 ---
 title: "Valentina Bucaioni"
 subtitle: Visiting PhD student
-image: ../../assets/images/outline.png
+image: ../../assets/images/ValentinaBucaioni.jpeg
 about:
     template: broadside
     links:
