@@ -5,14 +5,12 @@ image: ../../assets/images/ValentinaBucaioni.jpeg
 about:
     template: broadside
     links:
-    #       - icon: person-fill
-    #         href: https://
-            - icon: LinkedIn
-              href: https://www.linkedin.com/in/valentina-bucaioni/
-            - icon: github
-              href: https://github.com/valebuca
-            - text: "{{< bi envelope-fill >}}"
-             href: mailto:valentina.bucaioni@ekh.lu.se
+      - icon: linkedin
+        href: https://www.linkedin.com/in/valentina-bucaioni/
+      - icon: github
+        href: https://github.com/valebuca
+      - text: "{{< bi envelope-fill >}}"
+        href: mailto:valentina.bucaioni@ekh.lu.se
 
 toc: false
 ---
