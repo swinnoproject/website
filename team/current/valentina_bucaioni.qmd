@@ -1,18 +1,19 @@
 ---
 title: "Valentina Bucaioni"
-# subtitle: 
+subtitle: Visiting PhD student
 image: ../../assets/images/outline.png
 about:
     template: broadside
-    # links:
+    links:
     #       - icon: person-fill
     #         href: https://pjkreutzer.github.io
-    #       - icon: twitter
-    #         href: https://twitter.com/pjkreutzer
-    #       - icon: github
-    #         href: https://github.com/pjkreutzer
-    #       - text: "{{< bi envelope-fill >}}"
-    #         href: mailto:philipp_jonas.kreutzer@ekh.lu.se
+            - icon: LinkedIn
+              href: https://www.linkedin.com/in/valentina-bucaioni/
+            - icon: github
+              href: https://github.com/valebuca
+            - text: "{{< bi envelope-fill >}}"
+             href: mailto:valentina.bucaioni@ekh.lu.se
 
 toc: false
 ---
+Ph.D. student in Innovation Management at the University of Siena with a focus on collaboration networks between universities and companies in science and technology in high-tech industries. Visiting Ph.D. student at Lunds Universitet under the SWINNO project analyzing networks of innovations through patents and products in the ICT Swedish sector.
