@@ -6,7 +6,7 @@ about:
     template: broadside
     links:
     #       - icon: person-fill
-    #         href: https://pjkreutzer.github.io
+    #         href: https://
             - icon: LinkedIn
               href: https://www.linkedin.com/in/valentina-bucaioni/
             - icon: github
