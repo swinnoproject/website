@@ -1,15 +1,15 @@
 ---
 title: "Cristina Chaminade"
-# subtitle:
+subtitle: Professor
 # Upload image to assets and replace outline.png with FirstnameLastname.ending
-image: ../../assets/images/outline.png
+image: ../../assets/images/ChristinaChaminade.jpg
 about:
     template: trestles
-    # links:
+    links:
     # Fill in relevant fields and uncomment (remove "#"") text|icon + href rows
     #    personal website - fill in and uncomment the following two lines.
-    #   - icon: person-fill
-    #     href: https://swedishinnovationdata.se
+      - icon: person-fill
+        href: http://www.cristinachaminade.com/
 
     #    orcid - fill in and uncomment the following two lines.
     #   - text: "{{< ai orcid >}}"
