@@ -5,7 +5,7 @@ pagetitle: "SWINNO"
 :::{.text-bigger}
 The SWINNO project does research at the forefront of innovation and innovation systems.
 We developed and maintain a unique database of Swedish innovation from 1909 to today.
-Currently we focus on the impact of innovations as well as social, environmental and economic sustainability. 
+Currently we focus on the impact of innovations as well as social, environmental and economic sustainability.
 :::
 
 
@@ -17,13 +17,13 @@ Currently we focus on the impact of innovations as well as social, environmental
 
 ::: {.g-col-12 .g-col-md-3}
 ### Funded by
-[![](https://www.vinnova.se/static/build/images/vinnova-complete-green.svg){fig-align="left" width="200px" style="margin-top: 0.5rem" fig-alt="Logo of VINNOVA"}](https://www.vinnova.se) 
+[![](/assets/images/logos/vinnova-complete-green.svg){fig-align="left" width="200px" style="margin-top: 0.5rem" fig-alt="Logo of VINNOVA"}](https://www.vinnova.se)
 
-[![](https://www.lusem.lu.se/static/toolkit/images/logo/logo_lusem@2x.png){fig-align="left" width="200px" style="margin-top: 0.5rem" fig-alt="Logo of Lund University School of Economics and Management"}](https://www.lusem.lu.se)
+[![](/assets/images/logos/logo_lusem@2x.png){fig-align="left" width="200px" style="margin-top: 0.5rem" fig-alt="Logo of Lund University School of Economics and Management"}](https://www.lusem.lu.se)
 :::
 ::: {.g-col-12 .g-col-md-3}
 ### Located at
-[![](https://www.lusem.lu.se/static/toolkit/images/logo/logo_lusem@2x.png){fig-align="left" width="200px" style="margin-top: 0.5rem" fig-alt="Logo of Lund University School of Economics and Management"}](https://www.lusem.lu.se)
+[![](/assets/images/logos/logo_lusem@2x.png){fig-align="left" width="200px" style="margin-top: 0.5rem" fig-alt="Logo of Lund University School of Economics and Management"}](https://www.lusem.lu.se)
 :::
 ::: {.g-col-12 .g-col-md-3}
 ### About us
