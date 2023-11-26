@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  preview:
+    port: 5500
 
 execute:
   freeze: auto
@@ -17,7 +19,7 @@ website:
         text: Team
       - href: publications.qmd
         text: Publications
-  page-footer: 
+  page-footer:
     background: "#161324"
     left: |
       Copyright &copy;  2023 [SWINNO Project]()
@@ -26,7 +28,7 @@ website:
           icon: github
           aria-label: GitHub
     right: |
-      [Terms and Conditions](/tscs.qmd)  
+      [Terms and Conditions](/tscs.qmd)
 
 format:
   html:
@@ -37,7 +39,3 @@ format:
       sidebar-width: 0px
       body-width: 750px
       margin-width: 250px
-
-
-
-
