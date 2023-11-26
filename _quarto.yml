@@ -29,6 +29,8 @@ website:
           aria-label: GitHub
     right: |
       [Terms and Conditions](/tscs.qmd)
+  repo-url: https://github.com/swinnoproject/website
+  repo-actions: [issue]
 
 format:
   html:
@@ -38,4 +40,4 @@ format:
     grid:
       sidebar-width: 0px
       body-width: 750px
-      margin-width: 250px
+    margin-width: 250
