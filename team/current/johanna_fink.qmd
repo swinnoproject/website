@@ -1,7 +1,7 @@
 ---
 title: "Johanna Fink"
 subtitle: PhD Student
-image: ../../assets/images/outline.png
+image: ../../assets/images/JohannaFink.jpg
 about:
     template: trestles
     image-shape: rectangle
