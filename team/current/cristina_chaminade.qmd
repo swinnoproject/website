@@ -1,18 +1,59 @@
 ---
 title: "Cristina Chaminade"
 # subtitle:
+# Upload image to assets and replace outline.png with FirstnameLastname.ending
 image: ../../assets/images/outline.png
 about:
     template: trestles
     # links:
-    #       - icon: person-fill
-    #         href: https://pjkreutzer.github.io
-    #       - icon: twitter
-    #         href: https://twitter.com/pjkreutzer
-    #       - icon: github
-    #         href: https://github.com/pjkreutzer
-    #       - text: "{{< bi envelope-fill >}}"
-    #         href: mailto:philipp_jonas.kreutzer@ekh.lu.se
+    # Fill in relevant fields and uncomment (remove "#"") text|icon + href rows
+    #    personal website - fill in and uncomment the following two lines.
+    #   - icon: person-fill
+    #     href: https://swedishinnovationdata.se
+
+    #    orcid - fill in and uncomment the following two lines.
+    #   - text: "{{< ai orcid >}}"
+    #     href: https://orcid.org/
+
+    #    google scholar - fill in and uncomment the following two lines.
+    #   - icon: mortarboard-fill
+    #     href: https://scholar.google.com/
+
+    #    researchgate - fill in and uncomment the following two lines.
+    #   - text: "{{< ai researchgate >}}"
+    #     href: https://www.researchgate.net/profile/Anders-Hylmoe
+
+    #    ideas - fill in and uncomment the following two lines.
+    #   - icon: "{{< ai ideas-repec >}}"
+    #     href: https://ideas.repec.org/f/pto345.html
+
+    #    github - fill in and uncomment the following two lines.
+    #   - icon: github
+    #     href: https://github.com/
+
+    #    linkedin - fill in and uncomment the following two lines.
+    #   - icon: linkedin
+    #     href: https://www.linkedin.com/in/
+
+    #    twitter - fill in and uncomment the following two lines.
+    #   - icon: twitter
+    #     href: https://twitter.com/
+
+    #    mastodon - fill in and uncomment the following two lines.
+    #   - icon: mastodon
+    #     href: url
+
+    #    e-mail - fill in and uncomment the following two lines.
+    #   - text: "{{< bi envelope-fill >}}"
+    #     href: mailto: e-mail@domain.se
 
 toc: false
 ---
+
+<!-- :::{.text-bigger}
+
+Concise description of research interests and role in SWINNO -- remove the
+preceeding ":::{X}" and succeeding ":::" if the text is longer than a few short
+sentences.
+
+::: -->
