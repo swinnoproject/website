@@ -48,6 +48,8 @@ toc: false
 
 :::{.text-bigger}
 
-My dissertation project analyzes how government funding and innovation policy affect innovations in Sweden. The main focus is placed on the question whether public innovation activity is line with the country's environmental targets.
+My research analyzes how government funding and innovation policy affect innovations in Sweden.
+The main focus is placed on the question whether public innovation activity is
+line with the country's environmental targets.
 
 :::

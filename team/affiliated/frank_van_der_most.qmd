@@ -3,7 +3,6 @@ title: "Frank van der Most"
 subtitle: Consulting Research Engineer
 # Upload image to assets and replace outline.png with FirstnameLastname.ending
 image: ../../assets/images/outline.png
-
 about:
     template: trestles
     image-shape: rectangle
@@ -55,4 +54,10 @@ toc: false
 
 ---
 
-I make databases for sustainability research. Currently, I am doing that at the Economic History Department at Lund University in Sweden, where I have been developing a database for historical data on Swedish innovations. During a 2020 sabbatical in Costa Rica with my partner, we volunteered for Osa Conservation. I have developed a table-stitching database to glue together the different datasheets that they created over time with their sea turtle nesting program. This work made me realize that I want to orient my database developing more towards nature conservation and biological research. To do so, I am starting a company called Rubber Boots Data.
+:::{.text-bigger}
+
+I make databases for sustainability research through my company called Rubber Boots Data.
+
+I am developing SWINNO's database for historical data on Swedish innovations.
+
+:::

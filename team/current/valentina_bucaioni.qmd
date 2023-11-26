@@ -47,6 +47,13 @@ about:
 toc: false
 ---
 
-Ph.D. student in Innovation Management at the University of Siena with a focus on collaboration networks between universities and companies in science and technology in high-tech industries.
+:::{.text-bigger}
 
-Visiting Ph.D. student at Lunds Universitet under the SWINNO project, analyzing networks of innovations through patents and products in the Swedish ICT sector.
+I am a Ph.D. student in Innovation Management at the University of Siena,
+where I research collaboration networks between universities and companies in
+science and technology in high-tech industries.
+
+I use the SWINNO data to analyze networks of innovations through patents and
+products in the Swedish ICT sector.
+
+:::
