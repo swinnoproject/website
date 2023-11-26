@@ -3,7 +3,7 @@ title: "Sara Torregrosa-Hetland"
 subtitle: Researcher
 image: ../../assets/images/SaraTorregrosaHetland.jpg
 about:
-    template: broadside
+    template: trestles
     links:
           - icon: person-fill
             href: https://sites.google.com/site/sthetland/home

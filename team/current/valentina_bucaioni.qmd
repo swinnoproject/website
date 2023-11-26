@@ -3,7 +3,7 @@ title: "Valentina Bucaioni"
 subtitle: Visiting PhD student
 image: ../../assets/images/ValentinaBucaioni.jpeg
 about:
-    template: broadside
+    template: trestles
     links:
       - icon: linkedin
         href: https://www.linkedin.com/in/valentina-bucaioni/
@@ -14,5 +14,5 @@ about:
 
 toc: false
 ---
-Ph.D. student in Innovation Management at the University of Siena with a focus on collaboration networks between universities and companies in science and technology in high-tech industries. 
+Ph.D. student in Innovation Management at the University of Siena with a focus on collaboration networks between universities and companies in science and technology in high-tech industries.
 Visiting Ph.D. student at Lunds Universitet under the SWINNO project, analyzing networks of innovations through patents and products in the Swedish ICT sector.

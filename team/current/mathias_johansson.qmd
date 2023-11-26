@@ -3,7 +3,7 @@ title: "Mathias Johansson"
 subtitle: Systems developer
 image: ../../assets/images/MathiasJohansson.png
 about:
-    template: broadside
+    template: trestles
     links:
         - text: "{{< ai orcid >}}"
           href: https://orcid.org/0000-0002-3338-0551

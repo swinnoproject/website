@@ -1,13 +1,13 @@
 ---
 title: "Gergei Farkas"
-# subtitle: 
-# image: 
+# subtitle:
+# image:
 started: YYYY
 ended: YYYY
 about:
-    template: broadside
-    # image: 
-    # links: 
+    template: trestles
+    # image:
+    # links:
     #       - icon: person-fill
     #         href: https://pjkreutzer.github.io
     #       - icon: twitter
