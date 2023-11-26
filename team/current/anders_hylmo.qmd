@@ -48,4 +48,10 @@ about:
 toc: false
 ---
 
-I have a backgorund (Phd) as sociologist of science, with current research interests spanning science and technology studies, valuation studies, research and innovation policy and socio-technical transitions to sustainability. In Swinno, I have been responsible for interviewing research managers of large Swedish engineering firms and journal editors and journalists, with the purpose of triangulating methodological insights into the validity of the LBIO method.
+I have a backgorund (Phd) as sociologist of science, with current research
+interests spanning science and technology studies, valuation studies, research
+and innovation policy and socio-technical transitions to sustainability.
+
+In Swinno, I have been responsible for interviewing research managers of large
+Swedish engineering firms and journal editors and journalists, with the purpose
+of triangulating methodological insights into the validity of the LBIO method.

@@ -48,8 +48,8 @@ toc: false
 
 :::{.text-bigger}
 
-I joined the SWINNO project in 2021 as a research assistant.
+I joined the SWINNO project in 2021 as a Research Assistant.
 
-I work with reading and collecting innovations data to the SWINNO database.
+I work with finding and entering innovation data into SWINNO's database.
 
 :::

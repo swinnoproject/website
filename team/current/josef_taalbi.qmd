@@ -49,6 +49,6 @@ about:
 
 ---
 
-I am PI of  the SWINNO project. My main research interest lies in the study of why, how and when people innovate, and what can be learnt about societal and sustainable transitions from observing patterns in technological change in a long run perspective, focusing on the period from 1890 to today.
+I am PI of  the SWINNO project. My main research interest lies in the study of why, how and when people innovate, and what can be learnt about societal and sustainable transitions from observing patterns in technological change in a long run perspectives.
 
 The SWINNO database enables various entry points to such analyses, spanning both micro and macro analysis, both statistical and in-depth qualitative analysis. I am especially interested in how complementarities and obstacles emerge in technology shifts, shaping long run outcomes, which is possible to study within the SWINNO database using various innovation networks.

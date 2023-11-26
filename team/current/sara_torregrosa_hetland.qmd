@@ -42,7 +42,9 @@ about:
 
 toc: false
 ---
+:::{.text-bigger}
 
 I am an economic historian with a PhD from the University of Barcelona and worked as a postdoc and researcher at Lund University. I am currently based at the Public University of Navarre, Spain.
 
 My main area of interest is the history of taxation, inequality, and public policies. In the  SWINNO project, I analyse innovation policies and their compared impact in Sweden and Finland
+:::

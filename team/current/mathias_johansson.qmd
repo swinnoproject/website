@@ -5,10 +5,41 @@ image: ../../assets/images/MathiasJohansson.png
 about:
     template: trestles
     links:
+    # Fill in relevant fields and uncomment (remove "#"") text|icon + href rows
+    #    personal website - fill in and uncomment the following two lines.
+      # - icon: person-fill
+      #   href: https://swedishinnovationdata.se
+
         - text: "{{< ai orcid >}}"
           href: https://orcid.org/0000-0002-3338-0551
+
+    #    google scholar - fill in and uncomment the following two lines.
+    #   - icon: mortarboard-fill
+    #     href: https://scholar.google.com/
+
+    #    researchgate - fill in and uncomment the following two lines.
+    #   - text: "{{< ai researchgate >}}"
+    #     href: https://www.researchgate.net/profile/Anders-Hylmoe
+
+    #    ideas - fill in and uncomment the following two lines.
+    #   - text: "{{< ai ideas-repec >}}"
+    #     href: https://ideas.repec.org/f/pto345.html
+
         - icon: github
           href: https://github.com/MatJohaDH
+
+    #    linkedin - fill in and uncomment the following two lines.
+    #   - icon: linkedin
+    #     href: https://www.linkedin.com/in/
+
+    #    twitter - fill in and uncomment the following two lines.
+    #   - icon: twitter
+    #     href: https://twitter.com/
+
+    #    mastodon - fill in and uncomment the following two lines.
+    #   - icon: mastodon
+    #     href: url
+
         - text: "{{< bi envelope-fill >}}"
           href: mailto:Mathias.Johansson@kultur.lu.se
 
@@ -18,6 +49,8 @@ toc: false
 :::{.text-bigger}
 I create systems, datapipelines and visualisations to help researchers
 leverage everything from simple webscraping and databases to so called
-*Artificial Intelligence* models. In the SWINNO project I am responsible
+*Artificial Intelligence* models.
+
+In the SWINNO project I am responsible
 for developing a new export format and a public dashboard.
 :::
