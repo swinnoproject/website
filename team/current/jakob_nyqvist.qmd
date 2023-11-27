@@ -3,7 +3,7 @@ title: "Jakob Nyqvist"
 # subtitle: Research assistant
 image: ../../assets/images/outline.png
 about:
-    template: broadside
+    template: trestles
     # links:
     #       - icon: person-fill
     #         href: https://www.ehl.lu.se/kontakt/ja0645ny
@@ -12,4 +12,4 @@ about:
 
 toc: false
 ---
-I work as a research assistant in the SWINNO project. My responsibilities include collecting innovation data and linking patent data to innovations in the SWINNO database. 
+I work as a research assistant in the SWINNO project. My responsibilities include collecting innovation data and linking patent data to innovations in the SWINNO database.

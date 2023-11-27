@@ -34,8 +34,6 @@ a[target="_blank"]::after {
 }
 
 
-
-
 /*-- headings style --*/
 
 h1,
@@ -54,13 +52,83 @@ h6,
     // letter-spacing: 3px;
 }
 
-/*-- about link style --*/
+/*-- about style --*/
 
-div.quarto-about-broadside .about-link {
-    color: black;
-    border-radius: 0px;
-    font-size: 1rem;
+// Trestles
+div.quarto-about-trestles {
+    display: flex !important;
+    flex-direction: row;
+    padding-top: 3em !important;
+    padding-bottom: 1em;
+
+    @include media-breakpoint-down(lg) {
+        flex-direction: column;
+        padding-top: 0em !important;
+    }
+
+    .about-entity {
+        @include media-breakpoint-up(lg) {
+            //max-width: 42%;
+            flex: 0 0 42%;
+        }
+
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-right: 1em;
+
+        .about-image {
+            object-fit: cover;
+            margin-bottom: 1.5em;
+        }
+
+        @include image-shapes();
+
+        .about-links {
+            @include responsive-buttons();
+            justify-content: center;
+
+            @include media-breakpoint-down(lg) {
+                flex-direction: row;
+                justify-content: space-evenly;
+                padding-top: 0em !important;
+
+            }
+        }
+
+        .about-link {
+            @include responsive-button();
+            color: black;
+            border: none !important;
+
+            &:hover {
+                background-color: black; // Adjusted to change background color on hover
+                color: white; // Adjusted text color on hover
+            }
+
+        }
+    }
+
+    .about-contents {
+        flex-basis: 0;
+        flex-grow: 1;
+
+        h2 {
+            border-bottom: none;
+        }
+
+        @include media-breakpoint-up(lg) {
+            border-left: solid 0px $border-color;
+            padding-left: 1.5em;
+        }
+
+        main.content {
+            margin-top: 0;
+        }
+    }
 }
+
 
 /*-- card style --*/
 

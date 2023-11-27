@@ -3,15 +3,16 @@ title: "Sara Torregrosa-Hetland"
 subtitle: Researcher
 image: ../../assets/images/SaraTorregrosaHetland.jpg
 about:
-    template: broadside
+    template: trestles
+    image-shape: rectangle
     links:
           - icon: person-fill
             href: https://sites.google.com/site/sthetland/home
           - icon: twitter
             href: https://twitter.com/sthetland
-          - icon: "{{< ai ideas-repec >}}"
+          - text: "{{< ai ideas-repec >}}"
             href: https://ideas.repec.org/f/pto345.html
-          - icon: "{{< ai google-scholar >}}"
+          - icon: mortarboard-fill
             href: https://scholar.google.se/citations?user=kDb_Z9YAAAAJ&hl=en
           - text: "{{< bi envelope-fill >}}"
             href: mailto:sara.torregrosa_hetland@ekh.lu.se

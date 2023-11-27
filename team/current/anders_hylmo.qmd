@@ -3,7 +3,8 @@ title: "Anders Hylmö"
 subtitle: Researcher
 image: ../../assets/images/AndersHylmo.jpg
 about:
-    template: broadside
+    template: trestles
+    image-shape: rectangle
     links:
           - text: "{{< ai researchgate >}}"
             href: https://www.researchgate.net/profile/Anders-Hylmoe

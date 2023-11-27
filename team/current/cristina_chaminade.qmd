@@ -3,7 +3,7 @@ title: "Cristina Chaminade"
 # subtitle:
 image: ../../assets/images/outline.png
 about:
-    template: broadside
+    template: trestles
     # links:
     #       - icon: person-fill
     #         href: https://pjkreutzer.github.io

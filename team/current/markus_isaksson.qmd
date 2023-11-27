@@ -1,9 +1,10 @@
 ---
 title: "Markus Isaksson"
-# subtitle: 
+# subtitle:
 image: ../../assets/images/outline.png
 about:
-    template: broadside
+    template: trestles
+    image-shape: rectangle
     # links:
     #       - icon: person-fill
     #         https://www.ehl.lu.se/kontakt/edz-msi

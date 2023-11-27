@@ -3,7 +3,8 @@ title: "Philipp Jonas Kreutzer"
 subtitle: PhD Student
 image: ../../assets/images/PhilippJonasKreutzer.jpg
 about:
-    template: broadside
+    template: trestles
+    image-shape: rectangle
     links:
           - icon: person-fill
             href: https://pjkreutzer.github.io
