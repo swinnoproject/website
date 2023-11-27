@@ -6,7 +6,7 @@ image: ../../assets/images/ChristinaChaminade.jpg
 about:
     template: trestles
     image-shape: rectangle
-    # links:
+    links:
     # Fill in relevant fields and uncomment (remove "#"") text|icon + href rows
     #    personal website - fill in and uncomment the following two lines.
       - icon: person-fill
