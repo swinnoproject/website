@@ -4,6 +4,7 @@ subtitle: PhD Student
 image: ../../assets/images/outline.png
 about:
     template: trestles
+    image-shape: rectangle
     links:
         - icon: person-fill
           href: https://portal.research.lu.se/en/persons/johanna-fink

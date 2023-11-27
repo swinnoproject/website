@@ -6,6 +6,7 @@ started: YYYY
 ended: YYYY
 about:
     template: trestles
+    image-shape: rectangle
     # image:
     # links:
     #       - icon: person-fill

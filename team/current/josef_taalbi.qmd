@@ -5,6 +5,7 @@ image: ../../assets/images/joseftaalbi_placeholder.jpg
 sortby: 1
 about:
     template: trestles
+    image-shape: rectangle
     links:
         - icon: person-fill
           href: https://joseftaalbi.com/

@@ -4,6 +4,7 @@ subtitle: Visiting PhD student
 image: ../../assets/images/ValentinaBucaioni.jpeg
 about:
     template: trestles
+    image-shape: rectangle
     links:
       - icon: linkedin
         href: https://www.linkedin.com/in/valentina-bucaioni/

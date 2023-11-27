@@ -4,6 +4,7 @@ subtitle: PhD Student
 image: ../../assets/images/PhilippJonasKreutzer.jpg
 about:
     template: trestles
+    image-shape: rectangle
     links:
           - icon: person-fill
             href: https://pjkreutzer.github.io

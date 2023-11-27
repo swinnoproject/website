@@ -5,6 +5,7 @@ image: ../../assets/images/AstridKander.jpg
 sortby: 2
 about:
     template: trestles
+    image-shape: rectangle
     links:
       - icon: person-fill
         href: https://portal.research.lu.se/en/persons/astrid-kander
