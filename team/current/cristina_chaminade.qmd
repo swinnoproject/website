@@ -2,7 +2,7 @@
 title: "Cristina Chaminade"
 subtitle: Professor
 # Upload image to assets and replace outline.png with FirstnameLastname.ending
-image: ../../assets/images/ChristinaChaminade.jpg
+image: ../../assets/images/CristinaChaminade.jpg
 about:
     template: trestles
     image-shape: rectangle
