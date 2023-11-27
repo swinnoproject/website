@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  preview:
+    port: 5500
 
 execute:
   freeze: auto
@@ -17,16 +19,21 @@ website:
         text: Team
       - href: publications.qmd
         text: Publications
-  page-footer: 
+  page-footer:
     background: "#161324"
     left: |
       Copyright &copy;  2023 [SWINNO Project]()
-    center:
-        - href: https://github.com/swinnoproject
-          icon: github
-          aria-label: GitHub
+    # center:
+    #     - href: https://github.com/swinnoproject
+    #       icon: github
+    #       aria-label: GitHub
+    center: |
+      *Site is under construction, v1.0 will be published on 2024-01-01*
+
     right: |
-      [Terms and Conditions](/tscs.qmd)  
+      [Terms and Conditions](/tscs.qmd)
+  repo-url: https://github.com/swinnoproject/website
+  repo-actions: [issue]
 
 format:
   html:
@@ -36,8 +43,4 @@ format:
     grid:
       sidebar-width: 0px
       body-width: 750px
-      margin-width: 250px
-
-
-
-
+    margin-width: 250

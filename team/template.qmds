@@ -1,18 +1,22 @@
 ---
-title: "Mathias Johansson"
-subtitle: Systems developer
-image: ../../assets/images/MathiasJohansson.png
+title: "Firstname Lastname"
+subtitle: "Role"
+# Upload image to assets and replace outline.png with FirstnameLastname.ending
+image: ../../assets/images/outline.png
+started: YYYY
+ended: YYYY
 about:
     template: trestles
     image-shape: rectangle
     links:
     # Fill in relevant fields and uncomment (remove "#"") text|icon + href rows
     #    personal website - fill in and uncomment the following two lines.
-      # - icon: person-fill
-      #   href: https://swedishinnovationdata.se
+      - icon: person-fill
+        href: https://swedishinnovationdata.se
 
-        - text: "{{< ai orcid >}}"
-          href: https://orcid.org/0000-0002-3338-0551
+    #    orcid - fill in and uncomment the following two lines.
+    #   - text: "{{< ai orcid >}}"
+    #     href: https://orcid.org/
 
     #    google scholar - fill in and uncomment the following two lines.
     #   - icon: mortarboard-fill
@@ -26,8 +30,9 @@ about:
     #   - text: "{{< ai ideas-repec >}}"
     #     href: https://ideas.repec.org/f/pto345.html
 
-        - icon: github
-          href: https://github.com/MatJohaDH
+    #    github - fill in and uncomment the following two lines.
+    #   - icon: github
+    #     href: https://github.com/
 
     #    linkedin - fill in and uncomment the following two lines.
     #   - icon: linkedin
@@ -41,17 +46,17 @@ about:
     #   - icon: mastodon
     #     href: url
 
-        - text: "{{< bi envelope-fill >}}"
-          href: mailto:Mathias.Johansson@kultur.lu.se
+    #    e-mail - fill in and uncomment the following two lines.
+    #   - text: "{{< bi envelope-fill >}}"
+    #     href: mailto: e-mail@domain.se
 
 toc: false
 ---
 
 :::{.text-bigger}
-I create systems, datapipelines and visualisations to help researchers
-leverage everything from simple webscraping and databases to so called
-*Artificial Intelligence* models.
 
-In the SWINNO project I am responsible
-for developing a new export format and a public dashboard.
+Concise description of research interests and role in SWINNO -- remove the
+preceeding ":::{X}" and succeeding ":::" if the text is longer than a few short
+sentences.
+
 :::
