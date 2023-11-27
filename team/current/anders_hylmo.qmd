@@ -1,19 +1,58 @@
 ---
 title: "Anders Hylmö"
 subtitle: Researcher
+# Upload image to assets and replace outline.png with FirstnameLastname.ending
 image: ../../assets/images/AndersHylmo.jpg
 about:
     template: trestles
     image-shape: rectangle
     links:
-          - text: "{{< ai researchgate >}}"
-            href: https://www.researchgate.net/profile/Anders-Hylmoe
-          - text: "{{< bi envelope-fill >}}"
-            href: mailto:anders.hylmo@hh.se
+    # Fill in relevant fields and uncomment (remove "#"") text|icon + href rows
+    #    personal website - fill in and uncomment the following two lines.
+    #   - icon: person-fill
+    #     href: https://swedishinnovationdata.se
+
+    #    orcid - fill in and uncomment the following two lines.
+    #   - text: "{{< ai orcid >}}"
+    #     href: https://orcid.org/
+
+    #    google scholar - fill in and uncomment the following two lines.
+    #   - icon: mortarboard-fill
+    #     href: https://scholar.google.com/
+
+      - text: "{{< ai researchgate >}}"
+        href: https://www.researchgate.net/profile/Anders-Hylmoe
+
+    #    ideas - fill in and uncomment the following two lines.
+    #   - icon: "{{< ai ideas-repec >}}"
+    #     href: https://ideas.repec.org/f/pto345.html
+
+    #    github - fill in and uncomment the following two lines.
+    #   - icon: github
+    #     href: https://github.com/
+
+    #    linkedin - fill in and uncomment the following two lines.
+    #   - icon: linkedin
+    #     href: https://www.linkedin.com/in/
+
+    #    twitter - fill in and uncomment the following two lines.
+    #   - icon: twitter
+    #     href: https://twitter.com/
+
+    #    mastodon - fill in and uncomment the following two lines.
+    #   - icon: mastodon
+    #     href: url
+
+      - text: "{{< bi envelope-fill >}}"
+        href: mailto:anders.hylmo@hh.se
 
 toc: false
 ---
 
-:::{.text-bigger}
-I have a backgorund (Phd) as sociologist of science, with current research interests spanning science and technology studies, valuation studies, research and innovation policy and socio-technical transitions to sustainability. In Swinno, I have been responsible for interviewing research managers of large Swedish engineering firms and journal editors and journalists, with the purpose of triangulating methodological insights into the validity of the LBIO method.
-:::
+I have a backgorund (Phd) as sociologist of science, with current research
+interests spanning science and technology studies, valuation studies, research
+and innovation policy and socio-technical transitions to sustainability.
+
+In Swinno, I have been responsible for interviewing research managers of large
+Swedish engineering firms and journal editors and journalists, with the purpose
+of triangulating methodological insights into the validity of the LBIO method.

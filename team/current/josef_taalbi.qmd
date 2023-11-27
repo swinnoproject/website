@@ -7,15 +7,49 @@ about:
     template: trestles
     image-shape: rectangle
     links:
-        - icon: person-fill
-          href: https://joseftaalbi.com/
-        - icon: mortarboard-fill
-          href: https://scholar.google.com.tw/citations?user=dBO5CxsAAAAJ&hl=sv&oi=ao
-        - icon: mastodon
-          href: https://fediscience.org/@joseftaalbi
+      - icon: person-fill
+        href: https://joseftaalbi.com/
+
+    #    orcid - fill in and uncomment the following two lines.
+    #   - text: "{{< ai orcid >}}"
+    #     href: https://orcid.org/
+
+      - icon: mortarboard-fill
+        href: https://scholar.google.com.tw/citations?user=dBO5CxsAAAAJ&hl=sv&oi=ao
+
+#    researchgate - fill in and uncomment the following two lines.
+    #   - text: "{{< ai researchgate >}}"
+    #     href: https://www.researchgate.net/profile/Anders-Hylmoe
+
+    #    ideas - fill in and uncomment the following two lines.
+    #   - icon: "{{< ai ideas-repec >}}"
+    #     href: https://ideas.repec.org/f/pto345.html
+
+    #    github - fill in and uncomment the following two lines.
+    #   - icon: github
+    #     href: https://github.com/
+
+    #    linkedin - fill in and uncomment the following two lines.
+    #   - icon: linkedin
+    #     href: https://www.linkedin.com/in/
+
+    #    twitter - fill in and uncomment the following two lines.
+    #   - icon: twitter
+    #     href: https://twitter.com/
+
+    #    mastodon - fill in and uncomment the following two lines.
+    #   - icon: mastodon
+    #     href: url
+
+    #    e-mail - fill in and uncomment the following two lines.
+    #   - text: "{{< bi envelope-fill >}}"
+    #     href: mailto: e-mail@domain.se
+
+      - icon: mastodon
+        href: https://fediscience.org/@joseftaalbi
 
 ---
 
-I am PI of  the SWINNO project. My main research interest lies in the study of why, how and when people innovate, and what can be learnt about societal and sustainable transitions from observing patterns in technological change in a long run perspective, focusing on the period from 1890 to today.
+I am PI of  the SWINNO project. My main research interest lies in the study of why, how and when people innovate, and what can be learnt about societal and sustainable transitions from observing patterns in technological change in a long run perspectives.
 
 The SWINNO database enables various entry points to such analyses, spanning both micro and macro analysis, both statistical and in-depth qualitative analysis. I am especially interested in how complementarities and obstacles emerge in technology shifts, shaping long run outcomes, which is possible to study within the SWINNO database using various innovation networks.

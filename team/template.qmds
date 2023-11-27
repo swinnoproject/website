@@ -1,16 +1,18 @@
 ---
-title: "Cristina Chaminade"
-subtitle: Professor
+title: "Firstname Lastname"
+subtitle: "Role"
 # Upload image to assets and replace outline.png with FirstnameLastname.ending
-image: ../../assets/images/ChristinaChaminade.jpg
+image: ../../assets/images/outline.png
+started: YYYY
+ended: YYYY
 about:
     template: trestles
     image-shape: rectangle
-    # links:
+    links:
     # Fill in relevant fields and uncomment (remove "#"") text|icon + href rows
     #    personal website - fill in and uncomment the following two lines.
       - icon: person-fill
-        href: http://www.cristinachaminade.com/
+        href: https://swedishinnovationdata.se
 
     #    orcid - fill in and uncomment the following two lines.
     #   - text: "{{< ai orcid >}}"
@@ -25,7 +27,7 @@ about:
     #     href: https://www.researchgate.net/profile/Anders-Hylmoe
 
     #    ideas - fill in and uncomment the following two lines.
-    #   - icon: "{{< ai ideas-repec >}}"
+    #   - text: "{{< ai ideas-repec >}}"
     #     href: https://ideas.repec.org/f/pto345.html
 
     #    github - fill in and uncomment the following two lines.
@@ -51,10 +53,10 @@ about:
 toc: false
 ---
 
-<!-- :::{.text-bigger}
+:::{.text-bigger}
 
 Concise description of research interests and role in SWINNO -- remove the
 preceeding ":::{X}" and succeeding ":::" if the text is longer than a few short
 sentences.
 
-::: -->
+:::
