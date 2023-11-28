@@ -17,6 +17,8 @@ website:
         text: About
       - href: team.qmd
         text: Team
+      - href: dash.qmd
+        text: "WIP Dashboard"
       - href: publications.qmd
         text: Publications
   page-footer:
@@ -43,4 +45,4 @@ format:
     grid:
       sidebar-width: 0px
       body-width: 750px
-    margin-width: 250
+      margin-width: 250px
