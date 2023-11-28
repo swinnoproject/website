@@ -28,7 +28,7 @@ website:
     #       icon: github
     #       aria-label: GitHub
     center: |
-      *Site is under construction, v1.0 will be published on 2024-01-01*
+      *Site is under construction, v1.0 will be released January 2024*
 
     right: |
       [Terms and Conditions](/tscs.qmd)
