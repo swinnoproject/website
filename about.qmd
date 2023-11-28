@@ -3,7 +3,7 @@ pagetitle: "About | SWINNO"
 title: "About"
 ---
 
-# A database of Swedish Innovations, 1970–2019
+# A database of Swedish Innovations, 1970 to the present
 
 The SWINNO project is an ongoing series of research projects into Swedish innovations and the Swedish innovation system. Many of these projects are based on the SWINNO database of Swedish innovations, often with additional data from for example surveys, interviews and policy documents. The project is currently headed by Josef Taalbi, and funded by VINNOVA, with additional funding from LUSEM.
 SWINNO 3. Significant New Products and Processes in Sweden 1970 to the present
