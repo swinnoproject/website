@@ -10,7 +10,7 @@ SWINNO 3. Significant New Products and Processes in Sweden 1970 to the present
 
 In 2020, the SWINNO project has gone into its third phase (SWINNO 3). This phase focuses on the themes of the impact of innovations and social, environmental and economic sustainability. Basic questions and topics are the long-run trends of innovation across different fields; assessing the drivers and obstacles of innovation, e.g., in environmental transitions; network analysis of collaboration patterns and industry ties; and the role of public funding and STI policies.
 
-Beside the research projects, SWINNO 3 continues and expands the data collection of the previous phases. From 2010 onwards, the database has grown from a single spreadsheet into a full-blown relational database that has been developed according to the needs of the SWINNO project and its research. The initial dataset comprised the years 1970 - 2007. SWINNO 2 extended this to 2019 and SWINNO 3 will continue to update for the duration of the project. A historical extension is being underway, going back to 1909 and is planned to go further back to the late 19th century.
+Beside the research projects, SWINNO 3 continues and expands the data collection of the previous phases. From 2010 onwards, the database has grown from a single spreadsheet into a full-blown relational database that has been developed according to the needs of the SWINNO project and its research. The initial dataset comprised the years 1970 - 2007. SWINNO 2 extended this to 2019 and SWINNO 3 will continue to update for the duration of the project. A historical extension is available for 1908-1969 and is currently extended  further back to the late 19th century.
 
 The richness of the SWINNO data allows it to be linked to for example particular regions, the innovating companies (from Sweden's statistical office) and patents. Patent data is being added to the innovations from 1970 to 2015.
 
@@ -39,4 +39,25 @@ Sjöö, K., Taalbi, J., Kander, A., & Ljungberg, J. (2014). A Database of Swedis
   year         = {{2014}},
 }
 
+```
+
+If you are using the historical data 1908-1969, please cite:
+
+Taalbi, J. (2021).Innovation in the long run: Perspectives on technological transitions in Sweden 1908–2016. *Environmental Innovation and Societal Transitions*, 40, pp. 222-248.
+
+[publication](https://doi.org/10.1016/j.eist.2021.07.003){target="_blank"} 
+
+
+```bibtex
+@article{taalbi2021,
+title = {Innovation in the long run: Perspectives on technological transitions in Sweden 1908–2016},
+journal = {Environmental Innovation and Societal Transitions},
+volume = {40},
+pages = {222-248},
+year = {2021},
+doi = {https://doi.org/10.1016/j.eist.2021.07.003},
+url = {https://www.sciencedirect.com/science/article/pii/S2210422421000502},
+author = {Josef Taalbi},
+keywords = {Innovation, Wavelet analysis, Technological transitions, Development blocks},
+}
 ```
