@@ -27,7 +27,7 @@ about:
     #     href: https://ideas.repec.org/f/pto345.html
 
         - icon: github
-          href: https://github.com/MatJohaDH
+          href: https://github.com/mathjoha
 
     #    linkedin - fill in and uncomment the following two lines.
     #   - icon: linkedin
