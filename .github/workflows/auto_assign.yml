@@ -15,5 +15,6 @@ jobs:
       uses: pozil/auto-assign-issue@v1
       with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          assignees: MatJohaDH
+          assignees: mathjoha
           numOfAssignee: 1
+          abortIfPreviousAssignees: true
