@@ -3,7 +3,7 @@ project:
   output-dir: docs
   preview:
     port: 5500
-
+  lib-dir: "/assets/js"
 execute:
   freeze: auto
 
@@ -30,7 +30,7 @@ website:
     #       icon: github
     #       aria-label: GitHub
     center: |
-      *Site is under construction, v1.0 will be released January 2024*
+      *v0.0.2*
 
     right: |
       [Terms and Conditions](/tscs.qmd)
