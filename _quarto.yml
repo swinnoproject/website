@@ -17,8 +17,8 @@ website:
         text: About
       - href: team.qmd
         text: Team
-      - href: dash.qmd
-        text: "WIP Dashboard"
+      - href: dashboard.qmd
+        text: "Dashboard"
       - href: publications.qmd
         text: Publications
   page-footer:
@@ -29,13 +29,11 @@ website:
     #     - href: https://github.com/swinnoproject
     #       icon: github
     #       aria-label: GitHub
-    center: |
-      *Site is under construction, v1.0 will be released January 2024*
 
     right: |
       [Terms and Conditions](/tscs.qmd)
   repo-url: https://github.com/swinnoproject/website
-  repo-actions: [issue]
+  repo-actions: [issue, edit]
 
 format:
   html:
