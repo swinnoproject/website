@@ -1,1 +1,1 @@
-Sitemap: https://github.com/swinnoproject/website/sitemap.xml
+Sitemap: https://swinnoproject.github.io/website/sitemap.xml
