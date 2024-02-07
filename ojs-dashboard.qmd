@@ -27,9 +27,6 @@ db = sqlite3.connect("SWINNO.UDIT.sqlite3")
 
 ```
 
-## Row {height=200px}
-
-
 ```{ojs}
 // | output: false
 dbfile = FileAttachment("SWINNO.UDIT.sqlite3").sqlite()
@@ -64,23 +61,16 @@ md`# ${nents[0]['c']} Entities`
 ## Row {height=400px}
 
 ```{ojs}
-Plot.rectY(filtered,
-  Plot.binX(
-    {y: "count"},
-    {x: "body_mass_g", fill: "species", thresholds: 20}
-  ))
-  .plot({
-    facet: {
-      data: filtered,
-      x: "sex",
-      y: "species",
-      marginRight: 80
-    },
-    marks: [
-      Plot.frame(),
-    ]
-  }
+
+Plot.plot({
+  marks: [
+    Plot.line(trend,
+      {x: "year", y: "count"},
+      { stroke: "black" }
+    )
+  ]}
 )
+
 ```
 
 
@@ -89,23 +79,22 @@ viewof year1 = Inputs.number(
   [1970, 2020],
   {value: 2000, step: 1, label: "YoC1"}
 )
+
 viewof year2 = Inputs.number(
   [1970, 2020],
   {value: 2020, step: 1, label: "YoC2"}
-
 )
 
 md`${year1} - ${year2}`
 
-// innovations = dbfile.`select id, name_sv, prod_code, year from innovation where ${year1} <= year and ${year2} >= year`
-
+innovations = dbfile.query(`select id, name_sv, prod_code, year from innovation where ${year1} <= year and ${year2} >= year`)
+trend = dbfile.query(`select year, count(*) as count from innovation where ${year1} <= year and ${year2} >= year group by year`)
 
 
 ```
 
 ```{ojs}
-
-innovations
+Inputs.table(trend)
 ```
 
 
