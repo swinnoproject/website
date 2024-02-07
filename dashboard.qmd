@@ -83,27 +83,34 @@ fig.show()
 ```
 
 ```{python}
-#| title: Innovations by Product code (SNI-2002)
+# | title: Innovations by Product code (SNI-2002)
 def make_text(id, name):
     text = str(id)
     if name is None or len(name.strip()) == 0:
         return text
 
-    text += ' ' + name
+    text += " " + name
     return text
 
-df = pd.read_sql_query('select prod_code as Code, id, name_sv from innovation where year >= 1970 and year <=2021 and prod_code is not null group by prod_code', db)
-# DataFrame({'Code':code, 'count':count})
-df['Innovation Product codes - SNI2007'] = 'Innovation Product codes - SNI2007'
-df['2digit'] = df['Code'].apply(lambda x : x[:2])
-df['3digit'] = df['Code'].apply(lambda x : x[:3])
-df['4digit'] = df['Code'].apply(lambda x : x[:4])
-df['5digit'] = df['Code'].apply(lambda x : x[:5])
-df['count'] = 1
-df['text'] = df.apply(lambda x: make_text(x['id'] , x['name_sv']), axis=1)
 
-fig = px.treemap(df, path=[px.Constant(''), '2digit', '3digit', '4digit', '5digit', 'text' ], values='count',
-#title="Innovations by SNI-2002 Product Code"
+df = pd.read_sql_query(
+    "select prod_code as Code, id, name_sv from innovation where year >= 1970 and year <= 2021 and prod_code is not null group by id",
+    db,
+)
+# DataFrame({'Code':code, 'count':count})
+df["Innovation Product codes - SNI2007"] = "Innovation Product codes - SNI2007"
+df["2digit"] = df["Code"].apply(lambda x: x[:2])
+df["3digit"] = df["Code"].apply(lambda x: x[:3])
+df["4digit"] = df["Code"].apply(lambda x: x[:4])
+df["5digit"] = df["Code"].apply(lambda x: x[:5])
+df["count"] = 1
+df["text"] = df.apply(lambda x: make_text(x["id"], x["name_sv"]), axis=1)
+
+fig = px.treemap(
+    df,
+    path=[px.Constant(""), "2digit", "3digit", "4digit", "5digit", "text"],
+    values="count",
+    # title="Innovations by SNI-2002 Product Code"
 )
 
 fig.show()
@@ -114,6 +121,6 @@ fig.show()
 
 ::: {.card  style="font-size: 50%;"}
 
-More visualisations coming soon, data is availabie [here](https://zenodo.org/doi/10.5281/zenodo.10602308).
+More visualisations coming soon, data is availabie [here](https://www.lusem.lu.se/economic-history/databases/swinno)
 
 :::
