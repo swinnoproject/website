@@ -29,50 +29,12 @@ db = sqlite3.connect("SWINNO.UDIT.sqlite3")
 
 ```{ojs}
 // | output: false
+
 dbfile = FileAttachment("SWINNO.UDIT.sqlite3").sqlite()
 innovation = dbfile.sql`select id, name_sv, prod_code, year from innovation`
 ```
 
-
-<!-- This Comment  is integral to the formatting.-->
-
-## Row {height=100px}
-
-```{ojs}
-ninns = dbfile.query(`select count(*) as c from innovation where ${year1} <= year and ${year2} >= year`)
-
-md`# ${ninns[0]['c']} Innovations`
-```
-
-```{ojs}
-narts = dbfile.query(`select count(*) as c  from article where ${year1} <= year and ${year2} >= year`)
-
-md`# ${narts[0]['c']} Articles`
-```
-
-```{ojs}
-nents = dbfile.query(`select  count(distinct entity_id) as c from innovation_entity as ie join innovation as i on ie.innovation_id == i.id where ${year1} <= year and ${year2} >= year`)
-
-md`# ${nents[0]['c']} Entities`
-```
-
-
-
-## Row {height=400px}
-
-```{ojs}
-
-Plot.plot({
-  marks: [
-    Plot.line(trend,
-      {x: "year", y: "count"},
-      { stroke: "black" }
-    )
-  ]}
-)
-
-```
-
+# {.sidebar}
 
 ```{ojs}
 viewof year1 = Inputs.number(
@@ -92,6 +54,50 @@ trend = dbfile.query(`select year, count(*) as count from innovation where ${yea
 
 
 ```
+
+
+# Timeline
+<!-- This Comment  is integral to the formatting.-->
+
+## Row {height=130px}
+
+```{ojs}
+ninns = dbfile.query(`select count(*) as c from innovation where ${year1} <= year and ${year2} >= year`)
+
+html`<div align="center">Innovations<br> <font size="7">${ninns[0]['c']}</font><div>`
+```
+
+```{ojs}
+narts = dbfile.query(`select count(*) as c  from article where ${year1} <= year and ${year2} >= year`)
+
+html`<div align="center">Articles<br> <font size="7">${narts[0]['c']}</font><div>`
+
+```
+
+```{ojs}
+nents = dbfile.query(`select  count(distinct entity_id) as c from innovation_entity as ie join innovation as i on ie.innovation_id == i.id where ${year1} <= year and ${year2} >= year`)
+
+html`<div align="center">Entities<br> <font size="7">${nents[0]['c']}</font><div>`
+
+```
+
+
+
+## Row {height=400px}
+
+```{ojs}
+
+Plot.line(trend,
+      {x: "year", y: "count"},
+      { stroke: "black" },
+
+).plot({y: {grid: true, zero: true }})
+
+```
+
+
+## Row {height=400px}
+
 
 ```{ojs}
 Inputs.table(trend)
