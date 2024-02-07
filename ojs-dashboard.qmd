@@ -1,0 +1,141 @@
+---
+format:
+    dashboard:
+        scrolling: true
+title: Innovations commercialized 1970-2021
+jupyter: python3
+
+---
+
+
+```{python}
+# | output: false
+import plotly.express as px
+import pandas as pd
+import sqlite3
+
+import plotly.io as pio
+
+pio.renderers.default = "notebook"
+
+# https://zenodo.org/records/10602309/files/SWINNO.UDIT.sqlite3
+db = sqlite3.connect("SWINNO.UDIT.sqlite3")
+
+# ojs_define(
+#     data=db.execute("select id, name_sv, prod_code, year from innovation").fetchall()
+# )
+
+```
+
+## Row {height=200px}
+
+
+```{ojs}
+// | output: false
+dbfile = FileAttachment("SWINNO.UDIT.sqlite3").sqlite()
+innovation = dbfile.sql`select id, name_sv, prod_code, year from innovation`
+```
+
+
+<!-- This Comment  is integral to the formatting.-->
+
+## Row {height=150px}
+
+```{ojs}
+// content: valuebox
+// | title: Innovations
+// | icon: gear-fill
+// | color: success
+
+
+
+ninns = dbfile.query(`select count(*) from innovation where ${year1} <= year and ${year2} >= year`)
+
+// ninns = dbfile.query(`select count(*) from innovation`)
+
+Inputs.table(ninns)
+
+```
+
+```{python}
+# | content: valuebox
+# | title: Articles
+# | icon: newspaper
+# | color: secondary
+
+num_article, *_ = db.execute(
+    "select count(*) from article where year <= 2021 and year >= 1970"
+).fetchone()
+
+dict(value=num_article)
+```
+
+```{python}
+# | content: valuebox
+# | title: Entities
+# | icon: buildings-fill
+
+num_entity, *_ = db.execute(
+    "select count(*) from entity as e where e.id in (select entity_id from innovation_entity as ie join innovation as i on ie.innovation_id == i.id where year <= 2021 and year >= 1970)"
+).fetchone()
+
+dict(value=num_entity)
+```
+
+
+
+## Row {height=400px}
+
+```{ojs}
+Plot.rectY(filtered,
+  Plot.binX(
+    {y: "count"},
+    {x: "body_mass_g", fill: "species", thresholds: 20}
+  ))
+  .plot({
+    facet: {
+      data: filtered,
+      x: "sex",
+      y: "species",
+      marginRight: 80
+    },
+    marks: [
+      Plot.frame(),
+    ]
+  }
+)
+```
+
+
+```{ojs}
+viewof year1 = Inputs.number(
+  [1970, 2020],
+  {value: 2000, step: 1, label: "YoC1"}
+)
+viewof year2 = Inputs.number(
+  [1970, 2020],
+  {value: 2020, step: 1, label: "YoC2"}
+
+)
+
+md`${year1} - ${year2}`
+
+// innovations = dbfile.`select id, name_sv, prod_code, year from innovation where ${year1} <= year and ${year2} >= year`
+
+
+
+```
+
+```{ojs}
+
+innovations
+```
+
+
+## Row {height=3%}
+
+::: {.card  style="font-size: 50%;"}
+
+More visualisations coming soon, data is availabie [here](https://www.lusem.lu.se/economic-history/databases/swinno)
+
+:::
