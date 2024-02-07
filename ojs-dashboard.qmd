@@ -31,6 +31,8 @@ db = sqlite3.connect("SWINNO.UDIT.sqlite3")
 // | output: false
 
 dbfile = FileAttachment("SWINNO.UDIT.sqlite3").sqlite()
+// dbfile = SQLiteDatabaseClient.open(FileAttachment("https://zenodo.org/api/records/10602309/files/SWINNO.UDIT.sqlite3/content").url())
+
 innovation = dbfile.sql`select id, name_sv, prod_code, year from innovation`
 ```
 
