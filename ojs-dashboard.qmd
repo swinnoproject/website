@@ -39,47 +39,24 @@ innovation = dbfile.sql`select id, name_sv, prod_code, year from innovation`
 
 <!-- This Comment  is integral to the formatting.-->
 
-## Row {height=150px}
+## Row {height=100px}
 
 ```{ojs}
-// content: valuebox
-// | title: Innovations
-// | icon: gear-fill
-// | color: success
+ninns = dbfile.query(`select count(*) as c from innovation where ${year1} <= year and ${year2} >= year`)
 
-
-
-ninns = dbfile.query(`select count(*) from innovation where ${year1} <= year and ${year2} >= year`)
-
-// ninns = dbfile.query(`select count(*) from innovation`)
-
-Inputs.table(ninns)
-
+md`# ${ninns[0]['c']} Innovations`
 ```
 
-```{python}
-# | content: valuebox
-# | title: Articles
-# | icon: newspaper
-# | color: secondary
+```{ojs}
+narts = dbfile.query(`select count(*) as c  from article where ${year1} <= year and ${year2} >= year`)
 
-num_article, *_ = db.execute(
-    "select count(*) from article where year <= 2021 and year >= 1970"
-).fetchone()
-
-dict(value=num_article)
+md`# ${narts[0]['c']} Articles`
 ```
 
-```{python}
-# | content: valuebox
-# | title: Entities
-# | icon: buildings-fill
+```{ojs}
+nents = dbfile.query(`select  count(distinct entity_id) as c from innovation_entity as ie join innovation as i on ie.innovation_id == i.id where ${year1} <= year and ${year2} >= year`)
 
-num_entity, *_ = db.execute(
-    "select count(*) from entity as e where e.id in (select entity_id from innovation_entity as ie join innovation as i on ie.innovation_id == i.id where year <= 2021 and year >= 1970)"
-).fetchone()
-
-dict(value=num_entity)
+md`# ${nents[0]['c']} Entities`
 ```
 
 
