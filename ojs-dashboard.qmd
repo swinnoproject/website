@@ -7,26 +7,6 @@ jupyter: python3
 
 ---
 
-
-```{python}
-# | output: false
-import plotly.express as px
-import pandas as pd
-import sqlite3
-
-import plotly.io as pio
-
-pio.renderers.default = "notebook"
-
-# https://zenodo.org/records/10602309/files/SWINNO.UDIT.sqlite3
-db = sqlite3.connect("SWINNO.UDIT.sqlite3")
-
-# ojs_define(
-#     data=db.execute("select id, name_sv, prod_code, year from innovation").fetchall()
-# )
-
-```
-
 ```{ojs}
 // | output: false
 
