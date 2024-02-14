@@ -2,8 +2,6 @@
 format:
     dashboard:
         scrolling: true
-title: Innovations commercialized 1970-2021
-jupyter: python3
 
 ---
 
@@ -16,9 +14,11 @@ dbfile = FileAttachment("SWINNO.UDIT.sqlite3").sqlite()
 innovation = dbfile.sql`select id, name_sv, prod_code, year from innovation`
 ```
 
-# {.sidebar}
+
+# {.toolbar}
 
 ```{ojs}
+
 viewof year1 = Inputs.number(
   [1970, 2020],
   {value: 2000, step: 1, label: "YoC1"}
@@ -29,7 +29,8 @@ viewof year2 = Inputs.number(
   {value: 2020, step: 1, label: "YoC2"}
 )
 
-md`${year1} - ${year2}`
+viewof sector = Inputs.toggle({label: "Codes"})
+
 
 innovations = dbfile.query(`select id, name_sv, prod_code, year from innovation where ${year1} <= year and ${year2} >= year`)
 trend = dbfile.query(`select year, count(*) as count from innovation where ${year1} <= year and ${year2} >= year group by year`)
@@ -38,8 +39,10 @@ trend = dbfile.query(`select year, count(*) as count from innovation where ${yea
 ```
 
 
-# Timeline
 <!-- This Comment  is integral to the formatting.-->
+
+# {.page}
+
 
 ## Row {height=130px}
 
@@ -69,11 +72,17 @@ html`<div align="center">Entities<br> <font size="7">${nents[0]['c']}</font><div
 
 ```{ojs}
 
-Plot.line(trend,
-      {x: "year", y: "count"},
-      { stroke: "black" },
-
-).plot({y: {grid: true, zero: true }})
+Plot.plot({
+  marks: [
+Plot.line(trend, {
+  x: "year",
+  y: "count",
+  stroke: "black",
+  tip: true
+})
+],
+y: {grid: true, zero: true }
+})
 
 ```
 
@@ -84,6 +93,10 @@ Plot.line(trend,
 ```{ojs}
 Inputs.table(trend)
 ```
+
+
+
+
 
 
 ## Row {height=3%}
