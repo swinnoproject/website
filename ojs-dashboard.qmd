@@ -21,7 +21,7 @@ innovation = dbfile.sql`select id, name_sv, prod_code, year from innovation`
 
 viewof year1 = Inputs.number(
   [1970, 2020],
-  {value: 2000, step: 1, label: "YoC1"}
+  {value: 1970, step: 1, label: "YoC1"}
 )
 
 viewof year2 = Inputs.number(
@@ -29,11 +29,11 @@ viewof year2 = Inputs.number(
   {value: 2020, step: 1, label: "YoC2"}
 )
 
-viewof sector = Inputs.toggle({label: "Codes"})
+viewof sector = Inputs.toggle({label: "Codes", value: true})
 
 
 innovations = dbfile.query(`select id, name_sv, prod_code, year from innovation where ${year1} <= year and ${year2} >= year`)
-trend = dbfile.query(`select year, count(*) as count from innovation where ${year1} <= year and ${year2} >= year group by year`)
+trend = sector ? dbfile.query(`select year, count(*) as count, "p"||substr(prod_code, 0, 3) as prod_code from innovation where ${year1} <= year and ${year2} >= year group by year, prod_code`) : dbfile.query(`select year, count(*) as count from innovation where ${year1} <= year and ${year2} >= year group by year`)
 
 
 ```
@@ -73,8 +73,14 @@ html`<div align="center">Entities<br> <font size="7">${nents[0]['c']}</font><div
 ```{ojs}
 
 Plot.plot({
-  marks: [
-Plot.line(trend, {
+  marks:
+  sector ? [
+    Plot.rectY(trend, {x:"year", y:"count", fill: "prod_code"})
+
+  ] : [
+Plot.line(
+  trend,
+  {
   x: "year",
   y: "count",
   stroke: "black",
