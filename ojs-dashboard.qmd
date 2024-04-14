@@ -75,8 +75,9 @@ html`<div align="center">Entities<br> <font size="7">${nents[0]['c']}</font><div
 Plot.plot({
   marks:
   sector ? [
-    Plot.rectY(trend, {x:"year", y:"count", fill: "prod_code"})
-
+    Plot.rectY(trend, Plot.binX({y: "count"})  ,{x:"year",  fill: "prod_code"}),
+    // Plot.dot(trend, {x:"year", y:"count", fill: "prod_code", tip: true})
+    Plot.ruleY[0]
   ] : [
 Plot.line(
   trend,
@@ -87,7 +88,7 @@ Plot.line(
   tip: true
 })
 ],
-y: {grid: true, zero: true }
+y: {grid: true, zero: true, tip: true }
 })
 
 ```
