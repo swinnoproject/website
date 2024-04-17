@@ -1,1 +1,1 @@
-Sitemap: https://swinnoproject.github.io/website/sitemap.xml
+Sitemap: https://www.swedishinnovationdata.se/sitemap.xml
