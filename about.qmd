@@ -16,7 +16,7 @@ The richness of the SWINNO data allows it to be linked to for example particular
 
 SWINNO data and meta data is publicly available (as far as privacy and copyright allows) as a spreadsheet that can be downloaded [here](https://www.lusem.lu.se/economic-history/databases/swinno){target="_blank"}.
 
-The SWINNO project has resulted in a number of papers in high impact academic journals, two PhD theses, a number of student papers, working papers and policy documents. 
+The SWINNO project has resulted in a number of papers in high impact academic journals, two PhD theses, a number of student papers, working papers and policy documents.
 
 If you are working with the SWINNO database, please cite the documentation paper:
 
@@ -45,7 +45,7 @@ If you are using the historical data 1908-1969, please cite:
 
 Taalbi, J. (2021).Innovation in the long run: Perspectives on technological transitions in Sweden 1908–2016. *Environmental Innovation and Societal Transitions*, 40, pp. 222-248.
 
-[publication](https://doi.org/10.1016/j.eist.2021.07.003){target="_blank"} 
+[publication](https://doi.org/10.1016/j.eist.2021.07.003){target="_blank"}
 
 
 ```bibtex

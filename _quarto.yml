@@ -27,11 +27,7 @@ website:
   page-footer:
     background: "#161324"
     left: |
-      Copyright &copy;  2024 [SWINNO Project]()
-    # center:
-    #     - href: https://github.com/swinnoproject
-    #       icon: github
-    #       aria-label: GitHub
+      Copyright &copy; 2024 [SWINNO Project]()
 
     right: |
       [Terms and Conditions](/tscs.qmd)

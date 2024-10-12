@@ -1,126 +1,406 @@
 ---
-format: dashboard
-title: Innovations commercialized 1970-2021
-jupyter: python3
+format:
+  dashboard:
+    echo: false
+    scrolling: false
+    orientation: columns
 
 ---
 
 
-```{python}
-# | output: false
-import plotly.express as px
-import pandas as pd
-import sqlite3
+## Inputs {.sidebar width="190px"}
 
-import plotly.io as pio
-
-pio.renderers.default = "notebook"
-
-# https://zenodo.org/records/10602309/files/SWINNO.UDIT.sqlite3
-db = sqlite3.connect("SWINNO.UDIT.sqlite3")
-```
+```{ojs}
 
 
-<!-- This Comment  is integral to the formatting.-->
 
-## Row {height=150px}
+import {dashboard} from "@cobus/dashboard-badges"
 
-```{python}
-#| content: valuebox
-#| title: Innovations
-#| icon: gear-fill
-#| color: success
-#|
-num_innovation, *_ = db.execute('select count(*) from innovation where year <= 2021 and year >= 1970').fetchone()
+{
+  const ts = d3.format(",");
 
-dict(value=num_innovation)
-```
+  let badges = [];
+  badges.push({stat: ts(counts[0].innovation), description: "Innovations", backColor: "black"});
 
-```{python}
-# | content: valuebox
-# | title: Articles
-# | icon: newspaper
-# | color: secondary
-
-num_article, *_ = db.execute(
-    "select count(*) from article where year <= 2021 and year >= 1970"
-).fetchone()
-
-dict(value=num_article)
-```
-
-```{python}
-# | content: valuebox
-# | title: Entities
-# | icon: buildings-fill
-
-num_entity, *_ = db.execute(
-    "select count(*) from entity as e where e.id in (select entity_id from innovation_entity as ie join innovation as i on ie.innovation_id == i.id where year <= 2021 and year >= 1970)"
-).fetchone()
-
-dict(value=num_entity)
-```
+  return dashboard({columns: 2, badges});
+}
 
 
-## Row {height=70%}
+viewof min_year = Inputs.range(
+  [1970, 2020],
+  {value: 1970, step: 1, label: "year (min):", width: '10px'},
 
-```{python}
-# | title: Number of innovations by year of commercialization
-x, y = zip(
-    *db.execute(
-        "select year, count(*) as count from innovation where year >= 1970 and year <= 2021 group by year"
-    )
-)
-fig = px.line(
-    x=x,
-    y=y,
-    labels={"x": "Year of Commercialization", "y": "NUmber of innovations"},
-    # title = "Number of innovations commercialized by year",
-)
-a = fig.update_xaxes(range=(1969, 2022))
-b = fig.update_yaxes(range=(0, 200))
-fig.show()
-```
-
-```{python}
-# | title: Innovations by Product code (SNI-2002)
-def make_text(id, name):
-    text = str(id)
-    if name is None or len(name.strip()) == 0:
-        return text
-
-    text += " " + name
-    return text
-
-
-df = pd.read_sql_query(
-    "select prod_code as Code, id, name_sv from innovation where year >= 1970 and year <= 2021 and prod_code is not null group by id",
-    db,
-)
-# DataFrame({'Code':code, 'count':count})
-df["Innovation Product codes - SNI2007"] = "Innovation Product codes - SNI2007"
-df["2digit"] = df["Code"].apply(lambda x: x[:2])
-df["3digit"] = df["Code"].apply(lambda x: x[:3])
-df["4digit"] = df["Code"].apply(lambda x: x[:4])
-df["5digit"] = df["Code"].apply(lambda x: x[:5])
-df["count"] = 1
-df["text"] = df.apply(lambda x: make_text(x["id"], x["name_sv"]), axis=1)
-
-fig = px.treemap(
-    df,
-    path=[px.Constant(""), "2digit", "3digit", "4digit", "5digit", "text"],
-    values="count",
-    # title="Innovations by SNI-2002 Product Code"
 )
 
-fig.show()
+
+viewof max_year = Inputs.range(
+  [1971, 2021],
+  {value: 2021, step: 1, label: "year (max):", width: '10px'}
+)
+
+
+
+// viewof codes = Inputs.select(sni_options.map((d) => d),
+//   {label: 'SNI2002',
+//     format: (t) => `${t.code} ${t.desc}`,
+//     value: (t) => sni_options.find((t) => t.code == "01"),
+//     multiple: true
+//   })
+
+// str_codes = (codes.length === 0) ? "": (codes.length == 1)  ? ` and prod_code like "${codes[0].code}%"` : ` and ( ${codes.map((d) => `prod_code like "${d.code}%"`).join(' OR ')} ) `
+
 ```
 
 
-## Row {height=3%}
+###
+<div style="position:absolute;bottom:10px;">
+The data used in these visualisations are available for download on
+<a href="https://zenodo.org/records/10602308">Zenodo</a> or you can
+acces our
+<a href="https://lite.datasette.io/?metadata=https://raw.githubusercontent.com/swinnoproject/datasette-lite/refs/heads/main/metadata.yml&url=https://zenodo.org/api/records/13893763/files/SWINNO.UDIT.sqlite3/content">
+database interface</a>
+that lets you explore the data in your browser.
+</div>
 
-::: {.card  style="font-size: 50%;"}
 
-More visualisations coming soon, data is availabie [here](https://www.lusem.lu.se/economic-history/databases/swinno)
+## plots {orientation="rows" padding="0px"}
 
-:::
+
+### line
+
+```{ojs}
+//| title: Innovation trends
+//| padding: 0px
+//| width: 20%
+
+Plot.plot({
+    x: {
+    label: "Year of commercialization",
+    tickformat: k,
+  },
+  y:{
+    label: "Innovations and patented innovations",
+    grid: true
+  },
+    // color: {legend: true},
+    marks: [
+      Plot.ruleY([0, 160]),
+
+      Plot.lineY(timeline_data, {x: "year", y:'value', stroke:'label'}, ),
+      Plot.ruleX(timeline_data, Plot.pointerX({py: "value", x: "year", stroke: 'red', format: k})),
+    Plot.tip(timeline_data, Plot.pointer({
+      x: "year",
+      y: "value",
+      title: (d) => `${d.label}: ${d.value}\nYear: ${k(d.year)}`
+    }))
+
+            ],
+
+})
+
+
+Plot.plot({
+    x: {
+    label: "Year of commercialization",
+    tickformat: k,
+  },
+  y:{
+    label: "Innovations within grouped by 2-digit SNI",
+    grid: true
+  },
+    color: {legend: true},
+    marks: [
+      Plot.ruleY([0, 160]),
+
+      Plot.areaY(prodtime_data,
+      Plot.stackY({
+        x: "year",
+        y:'value',
+        fill:'label',
+        title: (d) => `${d.label}\n${k(d.year)} -- ${d.value} innovations`}, ),
+),
+      Plot.ruleX(prodtime_data, Plot.pointerX({py: "value", x: "year", stroke: 'red', format: k})),
+
+
+            ],
+            style: {
+              pointerEvents: 'all'
+            },
+                color: {
+      legend: false,
+      columns: 2,
+    }
+
+
+})
+
+```
+
+## Sunburst { width="38%"}
+
+```{ojs}
+//| padding: 0px
+//| title: Innovations in SNI hierarchy
+
+viewof zoom = ZoomBurst(hi)
+
+zoom
+
+```
+
+```{ojs}
+//| output: false
+
+
+raw_tree = database.sql`SELECT distinct parent, name, tooltip from (SELECT "SNI" as parent, substr(prod_code,1,2) as name, "" as tooltip from innovation where year >= ${min_year} and year <= ${max_year} UNION ALL SELECT substr(prod_code,1,2) as parent, substr(prod_code,1,3) as name, "" as tooltip from innovation where year >= ${min_year} and year <= ${max_year} and year >= ${min_year} and year <= ${max_year} UNION ALL SELECT substr(prod_code,1,3) as parent, substr(prod_code,1,4) as name, "" as tooltip from innovation where year >= ${min_year} and year <= ${max_year} UNION ALL SELECT substr(prod_code,1,4) as parent, substr(prod_code,1,5) as name, "" as tooltip from innovation where year >= ${min_year} and year <= ${max_year} ) where name is not NULL and parent is not NULL and name != "" and parent != "" and name != parent  UNION ALL SELECT NULL as parent, "SNI" as name, "" as tooltip  UNION ALL SELECT distinct parent, name, tooltip from (SELECT prod_code as parent, i.id as name, "Innovation: " || i.id || "\n" || "Name: " || coalesce(name_sv, "[Unnamed]" ) || "\n" || "Year: " || year || "\n" || "Firm: " || coalesce(variantname, "[Unnamed]" ) || "\n" || desc_sv as tooltip from innovation as i left outer join innovation_entity as ie on i.id == ie.innovation_id and ie.type == 1 left outer join name_variant as nv on nv.source_id == ie.entity_id where  year >= ${min_year} and year <= ${max_year} and prod_code is not NULL and prod_code != "") order by parent, name`
+
+
+
+
+hi = d3.stratify().id((d) => d.name).parentId((d) => d.parent)(raw_tree);
+
+b = hi.sum((d) => 1 ? d.tooltip.substring(0,12) === "Innovation: " : 0).sort((a, b) => a.value + b.value);
+
+
+```
+
+```{ojs}
+//| output: false
+
+function make_tree_tooltip(item){
+  if (item.data.tooltip != ""){
+    return item.data.tooltip
+  }
+
+  return `${get_sni_name(item.data.name)}\nInnovations: ${item.value}`
+
+}
+
+```
+
+
+
+```{ojs}
+//| output: false
+
+console.log('Loading data')
+// database = FileAttachment("SWINNO.UDIT.sqlite3").sqlite()
+database = FileAttachment("https://zenodo.org/api/records/13893763/files/SWINNO.UDIT.sqlite3/content").sqlite()
+sni_options = await FileAttachment("sni2002.csv").csv({typed: false})
+function k(d) {
+  return Number(d3.utcFormat('%Y')(d)) +1
+}
+fl = d3.format('.1f')
+
+```
+
+
+```{ojs}
+//| output: false
+
+
+timeline = database.sql`SELECT count(*) as count, year, "Innovations" as label from innovation where year >= ${min_year} and year <= ${max_year} group by year UNION ALL SELECT count(*) as count, year, "Patented innovations" as label from innovation where year >= ${min_year} and year <= ${max_year} and patented group by year `;
+
+
+counts = database.sql`SELECT count(distinct i.id) as innovation, count(distinct a.id) as article, count(distinct e.id) as entity from innovation as i left outer join innovation_entity as ie on i.id == ie.innovation_id left outer join entity as e on ie.entity_id == e.id left outer join innovation_article as ia on i.id == ia.innovation_id left outer join article as a on ia.article_id == a.id where i.year >= ${min_year} and i.year <= ${max_year};`
+
+
+timeline_data = timeline.map( (r) => ({
+  year: new Date(r.year, 0, 1),
+  label: r.label,
+  value: r.count,
+}))
+
+
+timeline_prod = database.sql`select count(*) as count, year, substr(prod_code,1,2) as label from innovation where year between ${min_year} and ${max_year} and label in ("31", "25", "30", "24", "28", "32", "72", "33", "29" ) group by year, label UNION ALL select count(*) as count, year, "Other" as label from innovation where year between ${min_year} and ${max_year} and substr(prod_code,1,2) not in ("31", "25", "30", "24", "28", "32", "72", "33", "29") group by year `;
+
+
+
+function fill_in_zero_timestamps(data){
+  let result = [];
+  let labels = ["31", "25", "30", "24", "28", "32", "72", "33", "29", "Other"]
+  for (let year = min_year; year <= max_year; year++){
+    labels.forEach((label) => {
+      let value = data.find((t) => t.year == year && t.label == label, false)
+        if (value != undefined){
+          result.push({
+            year: new Date(year, 0, 1),
+            label: label,
+            count: value.count
+            });
+        } else {
+          result.push({
+            year: new Date(year, 0, 1),
+            label: label,
+            count: 0
+        })
+        }
+        })
+
+    }
+
+  return result;
+  }
+
+prodtime_data_prep = fill_in_zero_timestamps(timeline_prod)
+
+function get_sni_name(code){
+  if ((code == "Other") || (code == "SNI") || (code.length > 5)){
+    return code
+  }
+
+  var result = sni_options.find((t) => t.code == code)
+
+  if (result == undefined){
+    return code
+   }
+
+  return `${code}: ${result.desc}`
+}
+
+prodtime_data = prodtime_data_prep.map( (r) => ({
+  year: r.year,
+  label: get_sni_name(r.label),
+  value: r.count,
+}))
+
+```
+
+
+```{ojs}
+//| title: Innovation Product code (SNI 2002)
+//| output: false
+
+function ZoomBurst(hierarchy, {
+  height = 600,
+  width = 600,
+} = {}) {
+
+
+  // Specify the chart’s dimensions.
+  const radius = width / 6;
+
+  // // Create the color scale.
+  // const color = d3.scaleOrdinal(d3.quantize(d3.interpolateRainbow, data.children.length + 1));
+  // const color = d3.scaleOrdinal(d3.quantize(d3.interpolateRainbow, 100 + 1));
+
+
+  // const color = d3.scaleOrdinal(d3.quantize(d3.interpolateRainbow, hierarchy.children.length + 1));
+  const color = d3.scaleOrdinal(d3.schemeCategory10);
+
+  const root = d3.partition()
+      .size([2 * Math.PI, hierarchy.height + 1])
+    (hierarchy);
+  root.each(d => d.current = d);
+
+  // Create the arc generator.
+  const arc = d3.arc()
+      .startAngle(d => d.x0)
+      .endAngle(d => d.x1)
+      .padAngle(d => Math.min((d.x1 - d.x0) / 2, 0.005))
+      .padRadius(radius * 1.5)
+      .innerRadius(d => d.y0 * radius)
+      .outerRadius(d => Math.max(d.y0 * radius, d.y1 * radius - 1))
+
+  // Create the SVG container.
+  const svg = d3.create("svg")
+      .attr("viewBox", [-width / 2, -height / 2, width * 1 , width])
+      .style("font", "10px sans-serif");
+
+  // Append the arcs.
+  const path = svg.append("g")
+    .selectAll("path")
+    .data(root.descendants().slice(1))
+    .join("path")
+      .attr("fill", d => { while (d.depth >= 2) d = d.parent; return color(d.value); })
+      .attr("fill-opacity", d => arcVisible(d.current) ? (d.children ? 0.6 : 0.4) : 0)
+      .attr("pointer-events", d => arcVisible(d.current) ? "auto" : "none")
+
+      .attr("d", d => arc(d.current));
+
+  // Make them clickable if they have children.
+  path.filter(d => d.children)
+      .style("cursor", "pointer")
+      .on("click", clicked);
+
+  const format = d3.format(",d");
+  path.append("title")
+      .text(d => make_tree_tooltip(d));
+
+
+  const label = svg.append("g")
+      .attr("pointer-events", "none")
+      .attr("text-anchor", "middle")
+      .style("user-select", "none")
+    .selectAll("text")
+    .data(root.descendants().slice(1))
+    .join("text")
+      .attr("dy", "0.35em")
+      .attr("fill-opacity", d => +labelVisible(d.current))
+      .attr("transform", d => labelTransform(d.current))
+      .text(d => d.data.name);
+
+  const parent = svg.append("circle")
+      .datum(root)
+      .attr("r", radius)
+      .attr("fill", "none")
+      .attr("pointer-events", "all")
+      .on("click", clicked);
+
+  // Handle zoom on click.
+  function clicked(event, p) {
+    parent.datum(p.parent || root);
+
+    root.each(d => d.target = {
+      x0: Math.max(0, Math.min(1, (d.x0 - p.x0) / (p.x1 - p.x0))) * 2 * Math.PI,
+      x1: Math.max(0, Math.min(1, (d.x1 - p.x0) / (p.x1 - p.x0))) * 2 * Math.PI,
+      y0: Math.max(0, d.y0 - p.depth),
+      y1: Math.max(0, d.y1 - p.depth)
+    });
+
+
+
+    const t = svg.transition().duration(750);
+
+    // Transition the data on all arcs, even the ones that aren’t visible,
+    // so that if this transition is interrupted, entering arcs will start
+    // the next transition from the desired position.
+    path.transition(t)
+        .tween("data", d => {
+          const i = d3.interpolate(d.current, d.target);
+          return t => d.current = i(t);
+        })
+      .filter(function(d) {
+        return +this.getAttribute("fill-opacity") || arcVisible(d.target);
+      })
+        .attr("fill-opacity", d => arcVisible(d.target) ? (d.children ? 0.6 : 0.4) : 0)
+        .attr("pointer-events", d => arcVisible(d.target) ? "auto" : "none")
+
+        .attrTween("d", d => () => arc(d.current));
+
+    label.filter(function(d) {
+        return +this.getAttribute("fill-opacity") || labelVisible(d.target);
+      }).transition(t)
+        .attr("fill-opacity", d => +labelVisible(d.target))
+        .attrTween("transform", d => () => labelTransform(d.current));
+  }
+
+  function arcVisible(d) {
+    return d.y1 <= 3 && d.y0 >= 1 && d.x1 > d.x0;
+  }
+
+  function labelVisible(d) {
+    return d.y1 <= 3 && d.y0 >= 1 && (d.y1 - d.y0) * (d.x1 - d.x0) > 0.03;
+  }
+
+  function labelTransform(d) {
+    const x = (d.x0 + d.x1) / 2 * 180 / Math.PI;
+    const y = (d.y0 + d.y1) / 2 * radius;
+    return `rotate(${x - 90}) translate(${y},0) rotate(${x < 180 ? 0 : 180})`;
+  }
+
+  return svg.node();
+}
+
+
+```
