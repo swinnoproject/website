@@ -52,6 +52,17 @@ viewof max_year = Inputs.range(
 ```
 
 
+###
+<div style="position:absolute;bottom:10px;">
+The data used in these visualisations are available for download on
+<a href="https://zenodo.org/records/10602308">Zenodo</a> or you can
+acces our
+<a href="https://lite.datasette.io/?metadata=https://raw.githubusercontent.com/swinnoproject/datasette-lite/refs/heads/main/metadata.yml&url=https://zenodo.org/api/records/13893763/files/SWINNO.UDIT.sqlite3/content">
+database interface</a>
+that lets you explore the data in your browser.
+</div>
+
+
 ## plots {orientation="rows" padding="0px"}
 
 
