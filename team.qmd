@@ -51,7 +51,3 @@ listing:
 :::{#affiliated}
 :::
 
-## Alumni
-
-:::{#alumni}
-:::

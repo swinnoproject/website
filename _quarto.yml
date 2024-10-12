@@ -7,6 +7,9 @@ project:
 execute:
   freeze: auto
 
+resources:
+  - CNAME
+
 website:
   title: "SWINNO"
   navbar:
