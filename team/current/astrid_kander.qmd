@@ -1,6 +1,6 @@
 ---
 title: "Astrid Kander"
-subtitle: Researcher
+subtitle: Professor
 image: ../../assets/images/AstridKander.jpg
 sortby: 2
 about:
