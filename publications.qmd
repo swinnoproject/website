@@ -18,6 +18,7 @@ title: "Publications"
 
 ## Working papers
 
++ Fink, J. & Taalbi, J. (2024) Fueling radical and renewable innovations? An analysis of public innovation funding in Sweden, 1970-2021. Lund Papers in Economic History, no 260.
 + Hylmö, A., & Taalbi, J. (2024). Rise and fall of the giants?: Innovating firms in Sweden, 1890-2016. Lund Papers in Economic History, no 257.
 + Taalbi, J., & Martynovich, M. (2024). On the urban bias of patents and the scaling of innovation (No. 2422). Utrecht University, Department of Human Geography and Spatial Planning, Group Economic Geography.
 + Taalbi, J. (2023). Long-run patterns in the discovery of the adjacent possible. arXiv preprint arXiv:2208.00907.
