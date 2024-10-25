@@ -7,15 +7,15 @@ title: "Publications"
 + Martynovich, M., & Taalbi, J. (2023). Dynamic recombinant relatedness and its role for regional innovation. European Planning Studies, 31(5), 1070-1094.
 + Taalbi, J. (2022). Creative response in economic history. In Antonelli, C. (ed) Elgar Encyclopedia on the Economics of Knowledge and Innovation (pp. 71-80). Edward Elgar Publishing.
 + Taalbi, J. (2022). Technological systems and development blocks. In Antonelli, C. (ed) Elgar Encyclopedia on the Economics of Knowledge and Innovation, (pp. 477-486). Edward Elgar Publishing.
-+ Taalbi, J. (2021). Innovation in the long run: Perspectives on technological transitions in Sweden 1908–2016. Environmental innovation and societal transitions, 40, 222-248.
++ Taalbi, J. (2021). Innovation in the long run: Perspectives on technological transitions in Sweden 1908–2016. Environmental Innovation and Societal Transitions, 40, 222-248.
 + Taalbi, J. (2020). Evolution and structure of technological systems-An innovation output network. Research Policy, 49(8), 104010.
 + Kander, A., Taalbi, J., Oksanen, J., Sjöö, K., & Rilla, N. (2019). Innovation trends and industrial renewal in Finland and Sweden 1970–2013. Scandinavian Economic History Review, 67(1), 47-70.
-+ Taalbi, J. (2019). Origins and pathways of innovation in the third industrial revolution. Industrial and corporate change, 28(5), 1125-1148.
++ Taalbi, J. (2019). Origins and pathways of innovation in the third industrial revolution. Industrial and Corporate Change, 28(5), 1125-1148.
 + Torregrosa-Hetland, S., Pelkonen, A., Oksanen, J., & Kander, A. (2019). The prevalence of publicly stimulated innovations–A comparison of Finland and Sweden, 1970–2013. Research Policy, 48(6), 1373-1384.
 + Taalbi, J. (2017). What drives innovation? Evidence from economic history. Research Policy, 46(8), 1437-1453.
 + Taalbi, J. (2017). Development blocks in innovation networks: The Swedish manufacturing industry, 1970–2007. Journal of Evolutionary Economics, 27(3), 461-501.
 + Sjöö, K. (2016). Innovation and industrial renewal in Sweden, 1970–2007. Scandinavian Economic History Review, 64(3), 258-277.
-+ Taalbi, J. (2016). Development blocks and structural analysis (pp. 56-77). New York: Routledge.
++ Taalbi, J. (2016). Development blocks and structural analysis . In Ljungberg, J. (ed) Structural Analysis and the Process of Economic Development (pp. 56-77). New York: Routledge.
 
 ## Working papers
 
@@ -23,5 +23,6 @@ title: "Publications"
 + Hylmö, A., & Taalbi, J. (2024). Rise and fall of the giants?: Innovating firms in Sweden, 1890-2016. Lund Papers in Economic History, no 257.
 + Taalbi, J., & Martynovich, M. (2024). On the urban bias of patents and the scaling of innovation (No. 2422). Utrecht University, Department of Human Geography and Spatial Planning, Group Economic Geography.
 + Taalbi, J. (2023). Long-run patterns in the discovery of the adjacent possible. arXiv preprint arXiv:2208.00907.
++ Chaminade, C. (2022). Transitioning paths to a sustainable forest-based bioeconomy in Sweden? A deeper look at the innovation networks. https://dx.doi.org/10.2139/ssrn.4236029
 + Johansson, M., Nyqvist, J., & Taalbi, J. (2022). Linking innovations and patents-a machine learning assisted method. Available at SSRN 4127194.
 + Taalbi, J. (2022). Innovation with and without patents. arXiv preprint arXiv:2210.04102.
