@@ -1,4 +1,4 @@
-*.gif -binary
-*.png -binary
-*.jpeg -binary
-*.jpg -binary
+*.gif binary
+*.png binary
+*.jpeg binary
+*.jpg binary
