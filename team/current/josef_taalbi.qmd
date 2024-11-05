@@ -1,7 +1,7 @@
 ---
 title: "Josef Taalbi"
 subtitle: Associate Professor, PI
-image: ../../assets/images/joseftaalbi_placeholder.jpg
+image: ../../assets/images/JosefTaalbi (1).jpg
 sortby: 1
 about:
     template: trestles
