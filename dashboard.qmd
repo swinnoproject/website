@@ -318,6 +318,10 @@ title = d3.selectAll('.trendCard')
   .selectAll('.card-title')
   .text(`Trends of ${ts(db_filtered.length)} SWINNO innovations `)
 
+footer_right = d3.selectAll('.nav-footer-left').append('p').html('Access the data on <a href="https://zenodo.org/records/10602308">Zenodo</a>')
+
+footer_left = d3.selectAll('.nav-footer-right').append('p').html('Explore the <a href="https://lite.datasette.io/?metadata=https://raw.githubusercontent.com/swinnoproject/datasette-lite/refs/heads/main/metadata.yml&url=https://zenodo.org/api/records/13893763/files/SWINNO.UDIT.sqlite3/content">database interface</a> directly in your browser')
+
 
 ```
 
