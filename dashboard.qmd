@@ -48,7 +48,8 @@ viewof reduced = Inputs.search(
 viewof target_firm = Inputs.text({
   label: html`Filter by firm <span title="The search will suggest names and filter out data as you type.
 The search will look for perfect matches when including upper-case characters.
-If the search string is all lower-case, it will match against any firm name that contains that sequence of letters.">&#9432;</span>`,
+If the search string is all lower-case, it will match against any firm name that contains that sequence of letters.
+Firm names in SWINNO are recorded as they were reported in the source material.>&#9432;</span>`,
   placeholder: "Enter firm name",
   datalist: used_firms
 })
