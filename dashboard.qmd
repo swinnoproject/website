@@ -265,7 +265,12 @@ year_filter = (d) => (d.year >= years.min & d.year <= years.max)
 
 firm_filter = target_firm.length === 0 ?  (d) => (true) : (d) => (d.firm == target_firm | d.firm.toLowerCase().includes(target_firm))
 
-name_filter = target_inn.length === 0 ?  (d) => (true) : (d) => (d.name_sv == target_inn | d.name_sv.toLowerCase().includes(target_inn) | new String(d.inn_id).includes(target_inn))
+name_filter = target_inn.length === 0 ?  (d) => (true) : (d) => (
+  d.name_sv == target_inn |
+                d.name_sv.toLowerCase().includes(target_inn) |
+                d.desc_sv.toLowerCase().includes(target_inn) |
+                new String(d.inn_id).includes(target_inn)
+          )
 
 
 db_filtered = db.filter(prod_filter)
