@@ -12,16 +12,23 @@ format:
 
 ```{ojs}
 
-
 viewof ranges = Inputs.form([
 Inputs.range(
   [1970, 2021],
-  {value: 1970, step: 1, width: '10px',  label: "Year range"},
-
+  {
+    value: 1970,
+    step: 1,
+    width: '10px',
+    label: "Year range"
+  },
 ),
 Inputs.range(
   [1970, 2021],
-  {value: 2021, step: 1, width: '10px'},
+  {
+    value: 2021,
+    step: 1,
+    width: '10px'
+  },
 )])
 
 
@@ -58,19 +65,7 @@ Digits will also match against innovation ids.">&#9432;</span>`,
 ```
 
 
-<!-- ###
-<div>
-The data used in these visualisations are available for download on
-<a href="https://zenodo.org/records/10602308">Zenodo</a> or you can
-acces our
-<a href="https://lite.datasette.io/?metadata=https://raw.githubusercontent.com/swinnoproject/datasette-lite/refs/heads/main/metadata.yml&url=https://zenodo.org/api/records/13893763/files/SWINNO.UDIT.sqlite3/content">
-database interface</a>
-that lets you explore the data in your browser.
-</div> -->
-
-
 ## plots {orientation="rows" padding="0px"}
-
 
 ### line
 
@@ -80,8 +75,6 @@ that lets you explore the data in your browser.
 //| width: 20%
 //| id: trendCard
 //| classes: trendCard
-
-
 
 
 Plot.plot({
@@ -97,16 +90,22 @@ Plot.plot({
     marks: [
       Plot.ruleY([0, ylim]),
 
-      Plot.lineY(timeline_data, {x: "year", y: (d) => d.value === 0 ? NaN : d.value, stroke:'label', curve: "catmull-rom"}, ),
-      Plot.ruleX(timeline_data, Plot.pointerX({py: "value", x: "year", stroke: 'red', format: k})),
+      Plot.lineY(timeline_data, {
+        x: "year",
+        y: (d) => d.value === 0 ? NaN : d.value,
+        stroke:'label', curve: "catmull-rom"}, ),
+      Plot.ruleX(timeline_data, Plot.pointerX({
+        py: "value",
+        x: "year",
+        stroke: 'red',
+        format: k
+        })),
     Plot.tip(timeline_data, Plot.pointer({
       x: "year",
       y: "value",
       title: (d) => `${d.label}: ${d.value}\nYear: ${k(d.year)}`
     }))
-
-            ],
-
+  ],
 })
 
 
@@ -131,9 +130,12 @@ Plot.plot({
         fill:'label',
         title: (d) => `${d.label}\n${k(d.year)} -- ${d.value} innovations`, }, ),
 ),
-      Plot.ruleX(prodtime_data, Plot.pointerX({py: "value", x: "year", stroke: 'red', format: k})),
-
-
+      Plot.ruleX(prodtime_data, Plot.pointerX({
+        py: "value",
+        x: "year",
+        stroke: 'red',
+        format: k
+        })),
             ],
             style: {
               pointerEvents: 'all'
@@ -142,8 +144,6 @@ Plot.plot({
       legend: false,
       columns: 2,
     }
-
-
 })
 
 ```
@@ -163,7 +163,6 @@ zoom
 ```{ojs}
 //| output: false
 
-
 function make_sni_groups(sni_string){
   var results = [];
   for ( let i = 2 ; i <= sni_string.length; i ++ ) {
@@ -172,12 +171,11 @@ function make_sni_groups(sni_string){
   return results;
 }
 
-prod_code_combos = [ ... new Set((db_filtered.map( (d) => (make_sni_groups(d.prod_code)))
-).reduce((a,b) => [].concat(a, b))
+prod_code_combos = [ ... new Set(
+  (db_filtered.map( (d) => (make_sni_groups(d.prod_code))))
+  .reduce((a,b) => [].concat(a, b))
 )
 ]
-
-
 
 prod_code_relations = prod_code_combos.map( (d) => ({
   parent : d.length === 2 ? "SNI" : d.substr(0, d.length -1 ),
@@ -192,14 +190,16 @@ prod_code_innovations = db_filtered.filter(d => d.prod_code != "").map( (d) => (
 
 }))
 
-prod_code_tree = [].concat([{'parent': null, name: "SNI", tooltip: ""}], prod_code_relations, prod_code_innovations)
-
-
-
+prod_code_tree = [].concat(
+  [{'parent': null, name: "SNI", tooltip: ""}],
+  prod_code_relations,
+  prod_code_innovations
+)
 
 hi = d3.stratify().id((d) => d.name).parentId((d) => d.parent)(prod_code_tree);
 
-hi.sum((d) => 1 ? d.tooltip.substring(0,12) === "Innovation: " : 0).sort((a, b) => a.value + b.value);
+hi.sum((d) => 1 ? d.tooltip.substring(0,12) === "Innovation: " : 0)
+  .sort((a, b) => a.value + b.value);
 
 ```
 
@@ -210,9 +210,7 @@ function make_tree_tooltip(item){
   if (item.data.tooltip != ""){
     return item.data.tooltip
   }
-
   return `${get_sni_name(item.data.name)}\nInnovations: ${item.value}`
-
 }
 
 ```
@@ -245,13 +243,13 @@ db = database.sql`SELECT i.id as inn_id, year, patented, prod_code, coalesce(nam
 
 used_prod = [ ... new Set(db.map((d) => d.prod_code.substring(0, 2))) ]
 
-used_firms = [ ... new Set(db.map((d) => d.firm)) ].filter((d) => (d != '[Unnamed]'))
+used_firms = [ ... new Set(db.map((d) => d.firm)) ]
+  .filter((d) => (d != '[Unnamed]'))
 
-used_names = [ ... new Set(db.map((d) => d.name_sv)) ].filter((d) => (d != '[Unnamed]'))
-
+used_names = [ ... new Set(db.map((d) => d.name_sv)) ]
+  .filter((d) => (d != '[Unnamed]'))
 
 ```
-
 
 
 ```{ojs}
@@ -259,7 +257,6 @@ used_names = [ ... new Set(db.map((d) => d.name_sv)) ].filter((d) => (d != '[Unn
 target_codes = codes.map( (d) => d.code)
 
 years = Object.fromEntries(['min', 'max'].map((k, i) => [k, d3.extent(ranges)[i]]))
-
 
 prod_filter = codes.length === 0 ?  (d) => (true) : (d) => target_codes.includes(d['prod_code'].substring(0,2))
 
@@ -270,10 +267,12 @@ firm_filter = target_firm.length === 0 ?  (d) => (true) : (d) => (d.firm == targ
 name_filter = target_inn.length === 0 ?  (d) => (true) : (d) => (d.name_sv == target_inn | d.name_sv.toLowerCase().includes(target_inn) | new String(d.inn_id).includes(target_inn))
 
 
-db_filtered = db.filter(prod_filter).filter(year_filter).filter(firm_filter).filter(name_filter)
+db_filtered = db.filter(prod_filter)
+    .filter(year_filter)
+    .filter(firm_filter)
+    .filter(name_filter)
 
 tl = Array.from(d3.group(db_filtered, d  => d.year))
-
 
 innovations = tl.map((d) => ({
   year : d[0],
@@ -282,10 +281,7 @@ innovations = tl.map((d) => ({
 
 }))
 
-
-
 ylim = Math.ceil(innovations.map(a => a.value).reduce((a,b) => Math.max(a,b))/10)*10
-
 
 
 patented = tl.filter(d => d[0] <= 2015).map((d) => ({
@@ -318,9 +314,13 @@ title = d3.selectAll('.trendCard')
   .selectAll('.card-title')
   .text(`Trends of ${ts(db_filtered.length)} SWINNO innovations `)
 
-footer_right = d3.selectAll('.nav-footer-left').append('p').html('Access the data on <a href="https://zenodo.org/records/10602308">Zenodo</a>')
+footer_right = d3.selectAll('.nav-footer-left')
+    .append('p')
+    .html('Access the data on <a href="https://zenodo.org/records/10602308">Zenodo</a>')
 
-footer_left = d3.selectAll('.nav-footer-right').append('p').html('Explore the <a href="https://lite.datasette.io/?metadata=https://raw.githubusercontent.com/swinnoproject/datasette-lite/refs/heads/main/metadata.yml&url=https://zenodo.org/api/records/13893763/files/SWINNO.UDIT.sqlite3/content">database interface</a> directly in your browser')
+footer_left = d3.selectAll('.nav-footer-right')
+    .append('p')
+    .html('Explore the <a href="https://lite.datasette.io/?metadata=https://raw.githubusercontent.com/swinnoproject/datasette-lite/refs/heads/main/metadata.yml&url=https://zenodo.org/api/records/13893763/files/SWINNO.UDIT.sqlite3/content">database interface</a> directly in your browser')
 
 
 ```
@@ -513,7 +513,6 @@ function ZoomBurst(hierarchy, {
     });
 
 
-
     const t = svg.transition().duration(750);
 
     // Transition the data on all arcs, even the ones that aren’t visible,
@@ -555,6 +554,5 @@ function ZoomBurst(hierarchy, {
 
   return svg.node();
 }
-
 
 ```
