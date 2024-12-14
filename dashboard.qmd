@@ -57,7 +57,7 @@ Firm names in SWINNO are recorded as they were reported in the source material.>
 viewof target_inn = Inputs.text({
   label: html`Find innovation <span title="The search will suggest names and filter out data as you type.
 The search will look for perfect matches when including upper-case characters.
-If the search string is all lower-case, it will match against any innovation name that contains that sequence of letters.
+If the search string is all lower-case, it will match against any innovation name or description that contains that sequence of letters.
 Digits will also match against innovation ids.">&#9432;</span>`,
   placeholder: "Innovation name or ID",
   datalist: used_names
@@ -173,7 +173,8 @@ function make_sni_groups(sni_string){
 }
 
 prod_code_combos = [ ... new Set(
-  (db_filtered.map( (d) => (make_sni_groups(d.prod_code))))
+  (db_filtered
+  .map( (d) => (make_sni_groups(d.prod_code))))
   .reduce((a,b) => [].concat(a, b))
 )
 ]
@@ -289,12 +290,11 @@ innovations = tl.map((d) => ({
 
 ylim = Math.ceil(innovations.map(a => a.value).reduce((a,b) => Math.max(a,b))/10)*10
 
-
-patented = tl.filter(d => d[0] <= 2015).map((d) => ({
+patented = tl.map((d) => ({
   year : d[0],
   value: d[1].map( (d) => d['patented']).reduce((a,b) => a + b),
   label: "Patented"
-}))
+})).filter(d => d.year <= 2015)
 
 t2 = [].concat(innovations, patented)
 
