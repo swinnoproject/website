@@ -256,6 +256,7 @@ used_names = [ ... new Set(db.map((d) => d.name_sv)) ]
 
 ```{ojs}
 //| output: false
+
 target_codes = codes.map( (d) => d.code)
 
 years = Object.fromEntries(['min', 'max'].map((k, i) => [k, d3.extent(ranges)[i]]))
@@ -273,11 +274,11 @@ name_filter = target_inn.length === 0 ?  (d) => (true) : (d) => (
                 new String(d.inn_id).includes(target_inn)
           )
 
-
-db_filtered = db.filter(prod_filter)
-    .filter(year_filter)
-    .filter(firm_filter)
-    .filter(name_filter)
+tmpdb = db.filter(prod_filter)
+     .filter(year_filter)
+     .filter(firm_filter)
+     .filter(name_filter)
+db_filtered = tmpdb.length == 0 ? db : tmpdb
 
 tl = Array.from(d3.group(db_filtered, d  => d.year))
 
@@ -315,17 +316,16 @@ timeline_raw = [].concat(
   value: undefined,
 }]
 )
-console.log(timeline_raw)
 
 
 function fill_in_zeros(data, labels){
   let result = [];
   for (let year = years.min; year <= years.max; year++){
-    let year_object = data.find((t) => t.year == year)
+    let year_object = data.find((t) => t.year == year);
 
     labels.forEach((label) => {
     let value = data.find((t) => t.label == label && t.year == year, false)
-    let date = new Date(year, 0, 1)
+    let date = new Date(year, 0, 1);
       if (label == 'Patented' && year > 2015){
         // Patents past 2015 are not in the data.
         result.push({
@@ -354,7 +354,6 @@ function fill_in_zeros(data, labels){
 
 timeline_data = fill_in_zeros(timeline_raw, ['Innovations', 'Patented'])
 
-console.log(timeline_data)
 
 ```
 
@@ -363,7 +362,7 @@ console.log(timeline_data)
 
 title = d3.selectAll('.trendCard')
   .selectAll('.card-title')
-  .text(`Trends of ${ts(db_filtered.length)} SWINNO innovations `)
+  .text(`Trends of ${ts(tmpdb.length)} SWINNO innovations `)
 
 footer_right = d3.selectAll('.nav-footer-left')
     .append('p')
