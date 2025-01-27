@@ -2,6 +2,7 @@
 /.quarto/
 /_site/
 docs/
+site_libss/
 
 # VS Code
 .vscode/*
