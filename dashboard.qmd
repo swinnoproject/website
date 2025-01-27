@@ -93,7 +93,7 @@ Plot.plot({
 
       Plot.lineY(timeline_data, {
         x: "year",
-        y: (d) => d.value === 0 ? NaN : d.value,
+        y: (d) => d.value,
         stroke:'label', curve: "catmull-rom"}, ),
       Plot.ruleX(timeline_data, Plot.pointerX({
         py: "value",
@@ -298,14 +298,14 @@ patented = tl.map((d) => ({
 
 t2 = [].concat(innovations, patented)
 
-timeline_data = [].concat(
+timeline_raw = [].concat(
   [{
     year: new Date(years.min, 0, 1),
   label: "Innovations",
   value: undefined,
 }],
   t2.map( (r) => ({
-  year: new Date(r.year, 0, 1),
+  year: r.year,
   label: r.label,
   value: r.value,
 })),
@@ -315,7 +315,50 @@ timeline_data = [].concat(
   value: undefined,
 }]
 )
+console.log(timeline_raw)
 
+
+function fill_in_zeros(data, labels){
+  let result = [];
+  for (let year = years.min; year <= years.max; year++){
+    let year_object = data.find((t) => t.year == year)
+
+    labels.forEach((label) => {
+    let value = data.find((t) => t.label == label && t.year == year, false)
+    let date = new Date(year, 0, 1)
+      if (label == 'Patented' && year > 2015){
+        // Patents past 2015 are not in the data.
+        result.push({
+          year: date,
+          label: label,
+          value: NaN
+          });
+      } else if (value != undefined){
+        result.push({
+          year: date,
+          label: label,
+          value: value.value
+          });
+      } else {
+        result.push({
+          year: date,
+          label: label,
+          value: 0
+      })
+      }
+      })
+
+    }
+  return result;
+  }
+
+timeline_data = fill_in_zeros(timeline_raw, ['Innovations', 'Patented'])
+
+console.log(timeline_data)
+
+```
+
+```{ojs}
 title = d3.selectAll('.trendCard')
   .selectAll('.card-title')
   .text(`Trends of ${ts(db_filtered.length)} SWINNO innovations `)
