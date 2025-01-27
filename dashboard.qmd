@@ -359,6 +359,8 @@ console.log(timeline_data)
 ```
 
 ```{ojs}
+//| output: false
+
 title = d3.selectAll('.trendCard')
   .selectAll('.card-title')
   .text(`Trends of ${ts(db_filtered.length)} SWINNO innovations `)
