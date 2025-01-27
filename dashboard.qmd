@@ -315,7 +315,9 @@ timeline_data = [].concat(
   value: undefined,
 }]
 )
+```
 
+```{ojs}
 title = d3.selectAll('.trendCard')
   .selectAll('.card-title')
   .text(`Trends of ${ts(db_filtered.length)} SWINNO innovations `)
