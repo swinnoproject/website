@@ -1,24 +1,10 @@
 [
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact us",
+    "objectID": "call-for-contributions.html",
+    "href": "call-for-contributions.html",
+    "title": "Contribute",
     "section": "",
-    "text": "Team\nSend us an Email \n\n\nFind us on\nGithub: @swinnoproject"
-  },
-  {
-    "objectID": "team/current/jakob_nyqvist.html",
-    "href": "team/current/jakob_nyqvist.html",
-    "title": "Jakob Nyqvist",
-    "section": "",
-    "text": "I work as a Research Assistant in the SWINNO project.\nMy responsibilities include collecting innovation data and linking patent data to innovations in the SWINNO database."
-  },
-  {
-    "objectID": "team/current/josef_taalbi.html",
-    "href": "team/current/josef_taalbi.html",
-    "title": "Josef Taalbi",
-    "section": "",
-    "text": "I am PI of the SWINNO project. My main research interest lies in the study of why, how and when people innovate, and what can be learnt about societal and sustainable transitions from observing patterns in technological change in a long run perspectives.\nThe SWINNO database enables various entry points to such analyses, spanning both micro and macro analysis, both statistical and in-depth qualitative analysis. I am especially interested in how complementarities and obstacles emerge in technology shifts, shaping long run outcomes, which is possible to study within the SWINNO database using various innovation networks."
+    "text": "You can find useful tools for working with our data at our github."
   },
   {
     "objectID": "team/current/sara_torregrosa_hetland.html",
@@ -35,11 +21,25 @@
     "text": "I joined the SWINNO project in 2021 as a Research Assistant.\nI work with finding and entering innovation data into SWINNO’s database."
   },
   {
-    "objectID": "call-for-contributions.html",
-    "href": "call-for-contributions.html",
-    "title": "Contribute",
+    "objectID": "team/current/philipp_jonas_kreutzer.html",
+    "href": "team/current/philipp_jonas_kreutzer.html",
+    "title": "Philipp Jonas Kreutzer",
     "section": "",
-    "text": "You can find useful tools for working with our data at our github."
+    "text": "I research the transition to a bioeconomy in the Swedish forest sector.\nI use SWINNO to understand the innovation system structure and how innovation shapes sustainability transitions."
+  },
+  {
+    "objectID": "team/current/josef_taalbi.html",
+    "href": "team/current/josef_taalbi.html",
+    "title": "Josef Taalbi",
+    "section": "",
+    "text": "I am PI of the SWINNO project. My main research interest lies in the study of why, how and when people innovate, and what can be learnt about societal and sustainable transitions from observing patterns in technological change in a long run perspectives.\nThe SWINNO database enables various entry points to such analyses, spanning both micro and macro analysis, both statistical and in-depth qualitative analysis. I am especially interested in how complementarities and obstacles emerge in technology shifts, shaping long run outcomes, which is possible to study within the SWINNO database using various innovation networks."
+  },
+  {
+    "objectID": "team/current/astrid_kander.html",
+    "href": "team/current/astrid_kander.html",
+    "title": "Astrid Kander",
+    "section": "",
+    "text": "My main research is in the field of environmental economic history. It is about the interrelations of economic growth, innovations, energy and CO2 emissions. The geographical scope is Sweden, Europe and the entire Globe and the time period is from 1800 up until the present. Trade and embodied emissions have been part of my research output in recent years. I also have a project on carbon border adjustment mechanism in EU.\nA second strand of research is innovation, more broadly. We have established a consistent Literature Based innovation output database for Sweden and Finland 1970-2013. It will be used to assess policy impacts, collaboration, economic significance of innovations and the interrelations between research and development (R&D), growth and innovation"
   },
   {
     "objectID": "publications.html",
@@ -84,20 +84,6 @@
     "text": "Affiliated\n\n\n\n\n\n\n\n\n\n\nFrank van der Most\n\n\nConsulting Research Engineer\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "swinno-partners.html",
-    "href": "swinno-partners.html",
-    "title": "Our partners and funders",
-    "section": "",
-    "text": "Vinnova is Sweden’s innovation agency. Our mission is to strengthen Sweden’s innovative capacity and contribute to sustainable growth. We work to ensure that Sweden is an innovative force in a sustainable world.\n\n\n\n\n\nLUSEM is one of the worlds leading economics and management schools. Located at the Lund University, Sweden."
-  },
-  {
-    "objectID": "swinno-partners.html#funders",
-    "href": "swinno-partners.html#funders",
-    "title": "Our partners and funders",
-    "section": "",
-    "text": "Vinnova is Sweden’s innovation agency. Our mission is to strengthen Sweden’s innovative capacity and contribute to sustainable growth. We work to ensure that Sweden is an innovative force in a sustainable world.\n\n\n\n\n\nLUSEM is one of the worlds leading economics and management schools. Located at the Lund University, Sweden."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -112,18 +98,18 @@
     "text": "The SWINNO project does research at the forefront of innovation and innovation systems. We developed and maintain a unique database of Swedish innovation from 1889 to today. Currently, we focus on innovation in the bioeconomy, innovation networks, environmental sustainability and innovation policy.\n\n\n\n\n\n\nFunded by\n\n\n\n\n\n\n\n\n\n\n\n\nLocated at\n\n\n\n\n\n\n\nAbout us\nOur aims\nOur team\nPartners and funders\nContact us\n\n\nContribute\nCall for contributions"
   },
   {
-    "objectID": "team/current/philipp_jonas_kreutzer.html",
-    "href": "team/current/philipp_jonas_kreutzer.html",
-    "title": "Philipp Jonas Kreutzer",
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact us",
     "section": "",
-    "text": "I research the transition to a bioeconomy in the Swedish forest sector.\nI use SWINNO to understand the innovation system structure and how innovation shapes sustainability transitions."
+    "text": "Team\nSend us an Email \n\n\nFind us on\nGithub: @swinnoproject"
   },
   {
-    "objectID": "team/current/astrid_kander.html",
-    "href": "team/current/astrid_kander.html",
-    "title": "Astrid Kander",
+    "objectID": "team/affiliated/frank_van_der_most.html",
+    "href": "team/affiliated/frank_van_der_most.html",
+    "title": "Frank van der Most",
     "section": "",
-    "text": "My main research is in the field of environmental economic history. It is about the interrelations of economic growth, innovations, energy and CO2 emissions. The geographical scope is Sweden, Europe and the entire Globe and the time period is from 1800 up until the present. Trade and embodied emissions have been part of my research output in recent years. I also have a project on carbon border adjustment mechanism in EU.\nA second strand of research is innovation, more broadly. We have established a consistent Literature Based innovation output database for Sweden and Finland 1970-2013. It will be used to assess policy impacts, collaboration, economic significance of innovations and the interrelations between research and development (R&D), growth and innovation"
+    "text": "I make databases for sustainability research through my company called Rubber Boots Data.\nI am developing SWINNO’s database for historical data on Swedish innovations."
   },
   {
     "objectID": "team/current/mathias_johansson.html",
@@ -133,11 +119,11 @@
     "text": "I create systems, datapipelines and visualisations to help researchers leverage everything from simple webscraping and databases to so called Artificial Intelligence models.\nIn the SWINNO project I am responsible for developing a new export format and a public dashboard."
   },
   {
-    "objectID": "team/current/valentina_bucaioni.html",
-    "href": "team/current/valentina_bucaioni.html",
-    "title": "Valentina Bucaioni",
+    "objectID": "team/current/jakob_nyqvist.html",
+    "href": "team/current/jakob_nyqvist.html",
+    "title": "Jakob Nyqvist",
     "section": "",
-    "text": "I am a Ph.D. student in Innovation Management at the University of Siena, where I research collaboration networks between universities and companies in science and technology in high-tech industries.\nI use the SWINNO data to analyze networks of innovations through patents and products in the Swedish ICT sector."
+    "text": "I work as a Research Assistant in the SWINNO project.\nMy responsibilities include collecting innovation data and linking patent data to innovations in the SWINNO database."
   },
   {
     "objectID": "team/current/anders_hylmo.html",
@@ -147,6 +133,13 @@
     "text": "I have a backgorund (Phd) as sociologist of science, with current research interests spanning science and technology studies, valuation studies, research and innovation policy and socio-technical transitions to sustainability.\nIn Swinno, I have been responsible for interviewing research managers of large Swedish engineering firms and journal editors and journalists, with the purpose of triangulating methodological insights into the validity of the LBIO method."
   },
   {
+    "objectID": "team/current/valentina_bucaioni.html",
+    "href": "team/current/valentina_bucaioni.html",
+    "title": "Valentina Bucaioni",
+    "section": "",
+    "text": "I am a Ph.D. student in Innovation Management at the University of Siena, where I research collaboration networks between universities and companies in science and technology in high-tech industries.\nI use the SWINNO data to analyze networks of innovations through patents and products in the Swedish ICT sector."
+  },
+  {
     "objectID": "team/current/johanna_fink.html",
     "href": "team/current/johanna_fink.html",
     "title": "Johanna Fink",
@@ -154,10 +147,17 @@
     "text": "My research analyzes how government funding and innovation policy affect innovations in Sweden. The main focus is placed on the question whether public innovation activity is line with the country’s environmental targets."
   },
   {
-    "objectID": "team/affiliated/frank_van_der_most.html",
-    "href": "team/affiliated/frank_van_der_most.html",
-    "title": "Frank van der Most",
+    "objectID": "swinno-partners.html",
+    "href": "swinno-partners.html",
+    "title": "Our partners and funders",
     "section": "",
-    "text": "I make databases for sustainability research through my company called Rubber Boots Data.\nI am developing SWINNO’s database for historical data on Swedish innovations."
+    "text": "Vinnova is Sweden’s innovation agency. Our mission is to strengthen Sweden’s innovative capacity and contribute to sustainable growth. We work to ensure that Sweden is an innovative force in a sustainable world.\n\n\n\n\n\nLUSEM is one of the worlds leading economics and management schools. Located at the Lund University, Sweden."
+  },
+  {
+    "objectID": "swinno-partners.html#funders",
+    "href": "swinno-partners.html#funders",
+    "title": "Our partners and funders",
+    "section": "",
+    "text": "Vinnova is Sweden’s innovation agency. Our mission is to strengthen Sweden’s innovative capacity and contribute to sustainable growth. We work to ensure that Sweden is an innovative force in a sustainable world.\n\n\n\n\n\nLUSEM is one of the worlds leading economics and management schools. Located at the Lund University, Sweden."
   }
 ]
