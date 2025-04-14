@@ -14,7 +14,7 @@ format:
 
 viewof ranges = Inputs.form([
 Inputs.range(
-  [1970, 2021],
+  [1970, 2020],
   {
     value: 1970,
     step: 1,
@@ -23,9 +23,9 @@ Inputs.range(
   },
 ),
 Inputs.range(
-  [1970, 2021],
+  [1970, 2020],
   {
-    value: 2021,
+    value: 2020,
     step: 1,
     width: '10px'
   },
@@ -224,7 +224,7 @@ function make_tree_tooltip(item){
 
 console.log('Loading data')
 // database = FileAttachment("SWINNO.UDIT.sqlite3").sqlite()
-database = FileAttachment("https://zenodo.org/api/records/13893763/files/SWINNO.UDIT.sqlite3/content").sqlite()
+database = FileAttachment("https://zenodo.org/api/records/15215172/files/SINNO.UDIT.sqlite3/content").sqlite()
 sni_options = await FileAttachment("sni2002.csv").csv({typed: false})
 function k(d) {
   return Number(d3.utcFormat('%Y')(d)) +1
@@ -241,7 +241,7 @@ fl = d3.format('.1f')
 d3 = require("d3")
 ts = d3.format(",");
 
-db = database.sql`SELECT i.id as inn_id, year, patented, prod_code, coalesce(name_sv, "[Unnamed]") as name_sv, coalesce(name, "[Unnamed]" ) as firm, desc_sv from innovation as i left outer join innovation_entity as ie on i.id == ie.innovation_id and ie.type == 1 left outer join entity as e on e.id == ie.entity_id where year between 1970 and 2022 order by year, prod_code`
+db = database.sql`SELECT i.id as inn_id, year, patented, coalesce(prod_code, '') as prod_code, coalesce(name_sv, "[Unnamed]") as name_sv, coalesce(name, "[Unnamed]" ) as firm, desc_sv from innovation as i left outer join innovation_entity as ie on i.id == ie.innovation_id and ie.type == 1 left outer join entity as e on e.id == ie.entity_id where year between 1970 and 2021 order by year, prod_code`
 
 used_prod = [ ... new Set(db.map((d) => d.prod_code.substring(0, 2))) ]
 
@@ -370,7 +370,7 @@ footer_right = d3.selectAll('.nav-footer-left')
 
 footer_left = d3.selectAll('.nav-footer-right')
     .append('p')
-    .html('Explore the <a href="https://lite.datasette.io/?metadata=https://raw.githubusercontent.com/swinnoproject/datasette-lite/refs/heads/main/metadata.yml&url=https://zenodo.org/api/records/13893763/files/SWINNO.UDIT.sqlite3/content">database interface</a> directly in your browser')
+    .html('Explore the <a href="https://lite.datasette.io/?metadata=https://raw.githubusercontent.com/swinnoproject/datasette-lite/refs/heads/main/metadata.yml&url=https://zenodo.org/api/records/15215172/files/SINNO.UDIT.sqlite3/content">database interface</a> directly in your browser')
 
 
 ```
