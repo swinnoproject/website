@@ -1,15 +1,22 @@
 ```{=html}
 <ul>
     <% for (const item of items) { %>
-
-
-        <h5><%- item.title%> </h4>
-
+        <li>
+            <h5><%- item.title %></h5>
+            <div>
                 <%= item.author %>
-
-                    <p><%- item.where %> (<%- item.year %>)</p>
-
-                    <% } %>
-
+            </div>
+            <p>
+                <% if (item.url) { %>
+                    <a href="<%- item.url %>" target="_blank" rel="noopener noreferrer">
+                        <%- item.where %>
+                    </a>
+                    <% } else { %>
+                        <%- item.where %>
+                            <% } %>
+                                (<%- item.year %>)
+            </p>
+        </li>
+        <% } %>
 </ul>
 ```
