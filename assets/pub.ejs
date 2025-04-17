@@ -1,0 +1,15 @@
+```{=html}
+<ul>
+    <% for (const item of items) { %>
+
+
+        <h5><%- item.title%> </h4>
+
+                <%= item.author %>
+
+                    <p><%- item.where %> (<%- item.year %>)</p>
+
+                    <% } %>
+
+</ul>
+```

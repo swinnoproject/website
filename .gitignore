@@ -21,3 +21,6 @@ site_libss/
 
 #data
 *.sqlite3
+
+#MacOS
+.DS_Store
