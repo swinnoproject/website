@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -66,7 +68,93 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-peer-reviewed .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-where','listing-year',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-author","listing-year","listing-title","listing-where","listing-url","listing-type"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-peer-reviewed'] = new List('listing-peer-reviewed', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-working-papers .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-where','listing-year',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-author","listing-year","listing-title","listing-where","listing-type"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-working-papers'] = new List('listing-working-papers', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -153,33 +241,312 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="peer-reviewed-publications" class="level2">
 <h2 class="anchored" data-anchor-id="peer-reviewed-publications">Peer reviewed publications</h2>
+<div id="listing-peer-reviewed" class="quarto-listing quarto-listing-container-custom">
 <ul>
-<li>Bucaioni, V., Murgia, G., &amp; Taalbi, J. (2024). The impact of explorative and exploitative collaborations on SMEs innovative performance. Journal of Small Business Management, 1-32.</li>
-<li>Martynovich, M., &amp; Taalbi, J. (2023). Dynamic recombinant relatedness and its role for regional innovation. European Planning Studies, 31(5), 1070-1094.</li>
-<li>Taalbi, J. (2022). Creative response in economic history. In Antonelli, C. (ed) Elgar Encyclopedia on the Economics of Knowledge and Innovation (pp.&nbsp;71-80). Edward Elgar Publishing.</li>
-<li>Taalbi, J. (2022). Technological systems and development blocks. In Antonelli, C. (ed) Elgar Encyclopedia on the Economics of Knowledge and Innovation, (pp.&nbsp;477-486). Edward Elgar Publishing.</li>
-<li>Taalbi, J. (2021). Innovation in the long run: Perspectives on technological transitions in Sweden 1908–2016. Environmental Innovation and Societal Transitions, 40, 222-248.</li>
-<li>Taalbi, J. (2020). Evolution and structure of technological systems-An innovation output network. Research Policy, 49(8), 104010.</li>
-<li>Kander, A., Taalbi, J., Oksanen, J., Sjöö, K., &amp; Rilla, N. (2019). Innovation trends and industrial renewal in Finland and Sweden 1970–2013. Scandinavian Economic History Review, 67(1), 47-70.</li>
-<li>Taalbi, J. (2019). Origins and pathways of innovation in the third industrial revolution. Industrial and Corporate Change, 28(5), 1125-1148.</li>
-<li>Torregrosa-Hetland, S., Pelkonen, A., Oksanen, J., &amp; Kander, A. (2019). The prevalence of publicly stimulated innovations–A comparison of Finland and Sweden, 1970–2013. Research Policy, 48(6), 1373-1384.</li>
-<li>Taalbi, J. (2017). What drives innovation? Evidence from economic history. Research Policy, 46(8), 1437-1453.</li>
-<li>Taalbi, J. (2017). Development blocks in innovation networks: The Swedish manufacturing industry, 1970–2007. Journal of Evolutionary Economics, 27(3), 461-501.</li>
-<li>Sjöö, K. (2016). Innovation and industrial renewal in Sweden, 1970–2007. Scandinavian Economic History Review, 64(3), 258-277.</li>
-<li>Taalbi, J. (2016). Development blocks and structural analysis . In Ljungberg, J. (ed) Structural Analysis and the Process of Economic Development (pp.&nbsp;56-77). New York: Routledge.</li>
+    
+        <li>
+            <h5 class="anchored">The impact of explorative and exploitative collaborations on SMEs innovative performance.</h5>
+            <div>
+                Bucaioni, V., Murgia, G., &amp; Taalbi, J.
+            </div>
+            <p>
+                
+                    <a href="https://www.tandfonline.com/doi/full/10.1080/00472778.2024.2322989" target="_blank" rel="noopener noreferrer">
+                        Journal of Small Business Management, 1-32.
+                    </a>
+                    
+                                (2024)
+            </p>
+        </li>
+        
+        <li>
+            <h5 class="anchored">Dynamic recombinant relatedness and its role for regional innovation.</h5>
+            <div>
+                Martynovich, M., &amp; Taalbi, J.
+            </div>
+            <p>
+                
+                    <a href="https://www.tandfonline.com/doi/full/10.1080/09654313.2022.2121154" target="_blank" rel="noopener noreferrer">
+                        European Planning Studies, 31(5), 1070-1094.
+                    </a>
+                    
+                                (2023)
+            </p>
+        </li>
+        
+        <li>
+            <h5 class="anchored">Creative response in economic history.</h5>
+            <div>
+                Taalbi, J.
+            </div>
+            <p>
+                
+                    <a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=g2-VEAAAQBAJ&amp;oi=fnd&amp;pg=PA71&amp;ots=bK5T99s0cg&amp;sig=f72ZpV8OUu1K05cbXtYVlPwD2Xo&amp;redir_esc=y#v=onepage&amp;q&amp;f=false" target="_blank" rel="noopener noreferrer">
+                        In Antonelli, C. (ed) Elgar Encyclopedia on the Economics of Knowledge and Innovation (pp. 71-80). Edward Elgar Publishing.
+                    </a>
+                    
+                                (2022)
+            </p>
+        </li>
+        
+        <li>
+            <h5 class="anchored">Technological systems and development blocks.</h5>
+            <div>
+                Taalbi, J.
+            </div>
+            <p>
+                
+                    <a href="https://www.sciencedirect.com/science/article/pii/S2210422421000502" target="_blank" rel="noopener noreferrer">
+                        In Antonelli, C. (ed) Elgar Encyclopedia on the Economics of Knowledge and Innovation, (pp. 477-486). Edward Elgar Publishing.
+                    </a>
+                    
+                                (2022)
+            </p>
+        </li>
+        
+        <li>
+            <h5 class="anchored">Innovation in the long run: Perspectives on technological transitions in Sweden 1908–2016.</h5>
+            <div>
+                Taalbi, J.
+            </div>
+            <p>
+                
+                    <a href="https://www.sciencedirect.com/science/article/pii/S2210422421000502?via%3Dihub" target="_blank" rel="noopener noreferrer">
+                        Environmental Innovation and Societal Transitions, 40, 222-248.
+                    </a>
+                    
+                                (2021)
+            </p>
+        </li>
+        
+        <li>
+            <h5 class="anchored">Evolution and structure of technological systems-An innovation output network.</h5>
+            <div>
+                Taalbi, J.
+            </div>
+            <p>
+                
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0048733320300895" target="_blank" rel="noopener noreferrer">
+                        Research Policy, 49(8), 104010.
+                    </a>
+                    
+                                (2020)
+            </p>
+        </li>
+        
+        <li>
+            <h5 class="anchored">Innovation trends and industrial renewal in Finland and Sweden 1970–2013.</h5>
+            <div>
+                Kander, A., Taalbi, J., Oksanen, J., Sjöö, K., &amp; Rilla, N.
+            </div>
+            <p>
+                
+                    <a href="https://www.tandfonline.com/doi/full/10.1080/03585522.2018.1516697" target="_blank" rel="noopener noreferrer">
+                        Scandinavian Economic History Review, 67(1), 47-70.
+                    </a>
+                    
+                                (2019)
+            </p>
+        </li>
+        
+        <li>
+            <h5 class="anchored">Origins and pathways of innovation in the third industrial revolution.</h5>
+            <div>
+                Taalbi, J.
+            </div>
+            <p>
+                
+                    <a href="https://academic.oup.com/icc/article/28/5/1125/5193703?login=false" target="_blank" rel="noopener noreferrer">
+                        Industrial and Corporate Change, 28(5), 1125-1148.
+                    </a>
+                    
+                                (2019)
+            </p>
+        </li>
+        
+        <li>
+            <h5 class="anchored">The prevalence of publicly stimulated innovations–A comparison of Finland and Sweden, 1970–2013.</h5>
+            <div>
+                Torregrosa-Hetland, S., Pelkonen, A., Oksanen, J., &amp; Kander, A.
+            </div>
+            <p>
+                
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0048733319300253" target="_blank" rel="noopener noreferrer">
+                        Research Policy, 48(6), 1373-1384.
+                    </a>
+                    
+                                (2019)
+            </p>
+        </li>
+        
+        <li>
+            <h5 class="anchored">What drives innovation? Evidence from economic history.</h5>
+            <div>
+                Taalbi, J.
+            </div>
+            <p>
+                
+                    <a href="https://www.sciencedirect.com/science/article/pii/S004873331730104X" target="_blank" rel="noopener noreferrer">
+                        Research Policy, 46(8), 1437-1453.
+                    </a>
+                    
+                                (2017)
+            </p>
+        </li>
+        
+        <li>
+            <h5 class="anchored">Development blocks in innovation networks: The Swedish manufacturing industry, 1970–2007.</h5>
+            <div>
+                Taalbi, J.
+            </div>
+            <p>
+                
+                    <a href="https://link.springer.com/article/10.1007/s00191-017-0491-y" target="_blank" rel="noopener noreferrer">
+                        Journal of Evolutionary Economics, 27(3), 461-501.
+                    </a>
+                    
+                                (2017)
+            </p>
+        </li>
+        
+        <li>
+            <h5 class="anchored">Innovation and industrial renewal in Sweden, 1970–2007.</h5>
+            <div>
+                Sjöö, K.
+            </div>
+            <p>
+                
+                    <a href="https://www.tandfonline.com/doi/full/10.1080/03585522.2016.1218928" target="_blank" rel="noopener noreferrer">
+                        Scandinavian Economic History Review, 64(3), 258-277.
+                    </a>
+                    
+                                (2016)
+            </p>
+        </li>
+        
+        <li>
+            <h5 class="anchored">Development blocks and structural analysis.</h5>
+            <div>
+                Taalbi, J.
+            </div>
+            <p>
+                
+                    <a href="https://www.taylorfrancis.com/chapters/edit/10.4324/9781315657042-4/development-blocks-structural-analysis-josef-taalbi" target="_blank" rel="noopener noreferrer">
+                        In Ljungberg, J. (ed) Structural Analysis and the Process of Economic Development (pp. 56-77). New York: Routledge.
+                    </a>
+                    
+                                (2016)
+            </p>
+        </li>
+        
 </ul>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 </section>
 <section id="working-papers" class="level2">
 <h2 class="anchored" data-anchor-id="working-papers">Working papers</h2>
+<div id="listing-working-papers" class="quarto-listing quarto-listing-container-custom">
 <ul>
-<li>Fink, J. &amp; Taalbi, J. (2024) Fueling radical and renewable innovations? An analysis of public innovation funding in Sweden, 1970-2021. Lund Papers in Economic History, no 260.</li>
-<li>Hylmö, A., &amp; Taalbi, J. (2024). Rise and fall of the giants?: Innovating firms in Sweden, 1890-2016. Lund Papers in Economic History, no 257.</li>
-<li>Taalbi, J., &amp; Martynovich, M. (2024). On the urban bias of patents and the scaling of innovation (No.&nbsp;2422). Utrecht University, Department of Human Geography and Spatial Planning, Group Economic Geography.</li>
-<li>Taalbi, J. (2023). Long-run patterns in the discovery of the adjacent possible. arXiv preprint arXiv:2208.00907.</li>
-<li>Chaminade, C. (2022). Transitioning paths to a sustainable forest-based bioeconomy in Sweden? A deeper look at the innovation networks. https://dx.doi.org/10.2139/ssrn.4236029</li>
-<li>Johansson, M., Nyqvist, J., &amp; Taalbi, J. (2022). Linking innovations and patents-a machine learning assisted method. Available at SSRN 4127194.</li>
-<li>Taalbi, J. (2022). Innovation with and without patents. arXiv preprint arXiv:2210.04102.</li>
+    
+        <li>
+            <h5 class="anchored">Fueling radical and renewable innovations? An analysis of public innovation funding in Sweden, 1970-2021.</h5>
+            <div>
+                Fink, J. &amp; Taalbi, J.
+            </div>
+            <p>
+                
+                        Lund Papers in Economic History, no 260.
+                            
+                                (2024)
+            </p>
+        </li>
+        
+        <li>
+            <h5 class="anchored">Rise and fall of the giants?: Innovating firms in Sweden, 1890-2016.</h5>
+            <div>
+                Hylmö, A., &amp; Taalbi, J.
+            </div>
+            <p>
+                
+                        Lund Papers in Economic History, no 257.
+                            
+                                (2024)
+            </p>
+        </li>
+        
+        <li>
+            <h5 class="anchored">On the urban bias of patents and the scaling of innovation (No. 2422). </h5>
+            <div>
+                Taalbi, J., &amp; Martynovich, M.
+            </div>
+            <p>
+                
+                        Utrecht University, Department of Human Geography and Spatial Planning, Group Economic Geography.
+                            
+                                (2024)
+            </p>
+        </li>
+        
+        <li>
+            <h5 class="anchored">Long-run patterns in the discovery of the adjacent possible.</h5>
+            <div>
+                Taalbi, J.
+            </div>
+            <p>
+                
+                        arXiv preprint arXiv:2208.00907.
+                            
+                                (2023)
+            </p>
+        </li>
+        
+        <li>
+            <h5 class="anchored">Transitioning paths to a sustainable forest-based bioeconomy in Sweden? A deeper look at the innovation networks.</h5>
+            <div>
+                Chaminade, C.
+            </div>
+            <p>
+                
+                        https://dx.doi.org/10.2139/ssrn.4236029
+                            
+                                (2022)
+            </p>
+        </li>
+        
+        <li>
+            <h5 class="anchored">Linking innovations and patents-a machine learning assisted method.</h5>
+            <div>
+                Johansson, M., Nyqvist, J., &amp; Taalbi, J.
+            </div>
+            <p>
+                
+                        Available at SSRN 4127194.
+                            
+                                (2022)
+            </p>
+        </li>
+        
+        <li>
+            <h5 class="anchored">Innovation with and without patents.</h5>
+            <div>
+                Taalbi, J.
+            </div>
+            <p>
+                
+                        arXiv preprint arXiv:2210.04102.
+                            
+                                (2022)
+            </p>
+        </li>
+        
 </ul>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+
 
 
 </section>
