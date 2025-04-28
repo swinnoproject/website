@@ -224,7 +224,7 @@ function make_tree_tooltip(item){
 
 console.log('Loading data')
 // database = FileAttachment("SWINNO.UDIT.sqlite3").sqlite()
-database = FileAttachment("https://zenodo.org/api/records/15215172/files/SINNO.UDIT.sqlite3/content").sqlite()
+database = FileAttachment("https://zenodo.org/api/records/15285784/files/SWINNO.UDIT.sqlite3/content").sqlite()
 sni_options = await FileAttachment("sni2002.csv").csv({typed: false})
 function k(d) {
   return Number(d3.utcFormat('%Y')(d)) +1
@@ -370,7 +370,7 @@ footer_right = d3.selectAll('.nav-footer-left')
 
 footer_left = d3.selectAll('.nav-footer-right')
     .append('p')
-    .html('Explore the <a href="https://lite.datasette.io/?metadata=https://raw.githubusercontent.com/swinnoproject/datasette-lite/refs/heads/main/metadata.yml&url=https://zenodo.org/api/records/15215172/files/SINNO.UDIT.sqlite3/content">database interface</a> directly in your browser')
+    .html('Explore the <a href="https://lite.datasette.io/?metadata=https://raw.githubusercontent.com/swinnoproject/datasette-lite/refs/heads/main/metadata.yml&url=https://zenodo.org/api/records/15285784/files/SWINNO.UDIT.sqlite3/content">database interface</a> directly in your browser')
 
 
 ```
