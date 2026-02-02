@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/publications.html",
+    "items": []
+  },
+  {
     "listing": "/team.html",
     "items": [
       "/team/current/josef_taalbi.html",
@@ -16,9 +20,5 @@
       "/team/affiliated/frank_van_der_most.html",
       "/team/alumni/gergei_farkas.html"
     ]
-  },
-  {
-    "listing": "/publications.html",
-    "items": []
   }
 ]
